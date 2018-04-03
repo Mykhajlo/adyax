@@ -35,18 +35,15 @@ public class HomePage {
     public static final By twitter_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[1]/li[2]/a/span/span/svg");
     public static final By instagram_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[1]/li[3]/a/span/span/svg");
     public static final By youtube_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[1]/li[4]/a/span/span/svg");
-    // bottom menu
+    // footer menu
     public static final By personal_data_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[4]/div/div[1]/footer/div/ul[2]/li[1]/a");
     public static final By legal_notes_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[4]/div/div[1]/footer/div/ul[2]/li[2]/a");
     public static final By newsletter_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[4]/div/div[1]/footer/div/ul[2]/li[3]/a");
     public static final By espace_presse_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[4]/div/div[1]/footer/div/ul[2]/li[4]/a");
-    public static final By contact_link = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[4]/div/div[1]/footer/div/ul[2]/li[5]/a");
     // language
     public static final By en_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[1]/a");
     public static final By fr_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[2]/a");
     public static final By it_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[3]/a");
     public static final By de_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[4]/a");
 
-
-    public static final By additional_info = By.xpath("template");
 }
