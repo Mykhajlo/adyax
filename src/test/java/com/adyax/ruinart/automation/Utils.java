@@ -3,6 +3,8 @@ package com.adyax.ruinart.automation;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
@@ -35,8 +37,13 @@ public class Utils {
             System.setProperty("webdriver.chrome.driver", "src//test//resources//chromedriver");
         }
         //linux
-        ChromeDriver driver = new ChromeDriver();
-        Dimension d = new Dimension(1400, 900); // > HD resolution
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+        ChromeDriver driver = new ChromeDriver(capabilities);
+        //ChromeDriver driver = new ChromeDriver();
+        Dimension d = new Dimension(1366, 768); // > HD resolution
         driver.manage().window().setSize(d);
         //driver.manage().window().maximize(); // full size  of screen
         return driver;
@@ -50,11 +57,25 @@ public class Utils {
         driver.get(getURL());
         driver.getWindowHandle();
         //Thread.sleep(2000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(coat_of_arms));// "R" coat of arms is visible
-        Assert.assertTrue(ofNullable(driver.findElement((location_name_filed))).isPresent());
+        LOGGER.info("Test");
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(coat_of_arms));// "R" coat of arms is visible
+        //LOGGER.info("Test 22");
+        Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
         LOGGER.info("Location field is present");
         Assert.assertTrue(ofNullable(driver.findElement((date_birth_field))).isPresent());
         LOGGER.info("DateBirth field is present");
+       // clickLocationDropdown(driver);
+        Thread.sleep(2000);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
+      //  selectLocation(driver);
+        Thread.sleep(2000);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(date_birth));
+        clickBirthDateDropdown(driver);
+        selectYear(driver);
+        Thread.sleep(2000);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(language_de));
+        selectLanguage(driver, language_fr_fr);
+        clickSubmitButton(driver);
 }
     public static void openHomePageAnonymous (WebDriver driver, String login, String password)throws InterruptedException{
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
@@ -78,7 +99,7 @@ public class Utils {
         InputStream input;
         String link = new String();
         try {
-            input = new FileInputStream("config.properties");
+            input = new FileInputStream("src//test//resources//config");
 
             // load a properties file
             prop.load(input);
