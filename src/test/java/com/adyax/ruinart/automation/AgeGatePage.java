@@ -29,8 +29,9 @@ public class AgeGatePage {
     public static final By coat_of_arms = By.xpath("//*[@id=\"drupal-modal\"]/div/div[1]/div[1]/div");
     public static final By location_name_field = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[1]/div[1]/div/span/span[1]");
     public static final By location_name  = By.xpath("//div[@class='jcf-option']"); // all locations 192 elements
+    public static final By test = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[1]/div[1]/div/span/div/div/span/div/span/ul/li[12]/span");
     public static final By date_birth_field = By.xpath("//*[@id=\"agegate-date\"]/div[3]/span/span[1]");
-    public static final By date_birth = By.xpath("//div[@class='jcf-option']"); // all date birth 105 elements
+    public static final By date_birth = By.xpath("//span[@class='jcf-option']"); // all date birth 105 elements
     public static final By submit_birth_button = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[3]");
     public static final By additional_info = By.xpath("//*[@id=\"mCSB_1_container\"]");
 
@@ -86,41 +87,75 @@ public class AgeGatePage {
         driver.findElement(submit_birth_button).click();// Click "Submit" Button
     }
     public static  void selectLocation (WebDriver driver){
-        Select drpLocation = new Select(driver.findElement(location_name));
-        drpLocation.selectByVisibleText("ALBANIA");
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        //wait.until(ExpectedConditions.elementToBeClickable(test));
+        LOGGER.info("Test 21");
+        driver.findElement(test).click();// Click "Location"
 
 
 
-        List<WebElement> webElementLocation = driver.findElements(location_name);
+        //Select drpLocation = new Select(driver.findElement(test));
+       // drpLocation.selectByVisibleText("ALBANIA");
+        /*LOGGER.info("Test 21");
+        WebElement countrydropdown = driver.findElement(By.xpath("//span[@class='jcf-list-content']"));
+        Select country = new Select(countrydropdown);
+        country.selectByVisibleText("Japan");*/
+
+
+        /*
+        WebElement countryUL = driver.findElement(By.xpath("//span[@class='jcf-list-content']/ul"));
+        List<WebElement> countriesList = countryUL.findElements(By.tagName("li"));
+        for (WebElement li : countriesList) {
+            if (li.getText().equals("Japan")) {
+                li.click();
+            }
+        }  */
+        LOGGER.info("Test 22");
+
+
+
+        /*
+        LOGGER.info("Test 21");
+        List<WebElement> webElementLocation = driver.findElements(date_birth);
+        LOGGER.info("Total responses = " + webElementLocation.size());
         String[] locationName = new String[webElementLocation.size()];
         Iterator<WebElement> iterator = webElementLocation.iterator();
         for (int i = 0; iterator.hasNext(); i++) {
             WebElement itemL = iterator.next();
             String labelR = itemL.getText();
-            locationName[i] =locationName[1];
-            System.out.println(locationName[i]);
+            locationName[i] = labelR.trim();
+            LOGGER.info(locationName[i]);
+            //System.out.println(locationName[i]);
             // LOGGER.info("Results Response = " + responses[i]);
-        }
+        }*/
     }
     public static  void selectYear (WebDriver driver){// not finished
         LOGGER.info("Test 22");
         List<WebElement> webElementBirthDate = driver.findElements(date_birth);
         LOGGER.info("Total responses = " + webElementBirthDate.size());
         int[] birthDate = new int[webElementBirthDate.size()];
-        Iterator<WebElement> iterator = webElementBirthDate.iterator();
-        for (int i = 0; iterator.hasNext(); i++) {
-            WebElement itemR= iterator.next();
-            String labelR = itemR.getText();
-            birthDate[i] = Integer.parseInt(labelR.trim().replaceAll("\\D+","").replaceAll("\\s",""));
-        }
 
+        Iterator<WebElement> iterator = webElementBirthDate.iterator();
+        LOGGER.info("Test 23");
+        for (int i = 0; iterator.hasNext(); i++) {
+            WebElement itemR = iterator.next();
+            String labelR = itemR.getText();
+            LOGGER.info(labelR);
+           // birthDate[i] = Integer.parseInt(labelR);
+           // LOGGER.info("Results Response = " + birthDate[i]);
+        }
+        LOGGER.info("Test 24");
         LocalDate localDate = LocalDate.now();
         String yearS = DateTimeFormatter.ofPattern("yyy").format(localDate);
         int yearI = Integer.parseInt(yearS);
-        System.out.println(yearI);
+        LOGGER.info(yearI);
+        //System.out.println(yearI);
         for (int i = 0; i < webElementBirthDate.size(); i++) {
             // LOGGER.info("Results Response = " + responses[i]);
-            if(birthDate[i] < yearI) {
+            if(birthDate[i] < (yearI -17)) {
             }
             }
         TreeSet<BirthDate> Years = new TreeSet<>();
@@ -129,7 +164,7 @@ public class AgeGatePage {
             Years.add(selectedYear);
         }
         for (BirthDate good : Years)
-            if (good.getYearValue() < yearI && good.getYearValue() > 1940) {
+            if (good.getYearValue() < (yearI -17) && good.getYearValue() > 1940) {
                 LOGGER.info("Result is found: " + good.toString());
                 good.getYearElement().click();
                 LOGGER.info(good.getYearValue());
