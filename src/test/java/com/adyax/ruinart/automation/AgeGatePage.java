@@ -89,14 +89,17 @@ public class AgeGatePage {
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         //wait.until(ExpectedConditions.elementToBeClickable(test));
+        wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
         // Create instance of Javascript executor
         JavascriptExecutor je = (JavascriptExecutor) driver;
-        LOGGER.info("Test 21");
+        LOGGER.info("Location dropdown is ready");
         clickLocationDropdown(driver);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         WebElement element = driver.findElement(test);
         je.executeScript("arguments[0].scrollIntoView(true);",element); // now execute query which actually will scroll until that element is not appeared on page.
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(element));// Element is selected at dropdown
+        LOGGER.info("Location : " + element.getText());
         element.click();// Click "Location"
 
         //Select drpLocation = new Select(driver.findElement(test));
@@ -113,7 +116,7 @@ public class AgeGatePage {
                 li.click();
             }
         }  */
-        LOGGER.info("Test 22");
+       // LOGGER.info("Test 22");
 
         /*
         List<WebElement> webElementLocation = driver.findElements(date_birth);
@@ -134,13 +137,16 @@ public class AgeGatePage {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.elementToBeClickable(date_birth_field));// Year dropdown is clickable
         JavascriptExecutor je = (JavascriptExecutor) driver;
-        LOGGER.info("Test 21");
+        LOGGER.info("Year dropdown is ready");
         clickBirthDateDropdown(driver);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         WebElement element = driver.findElement(date_birth);
         je.executeScript("arguments[0].scrollIntoView(true);",element); // now execute query which actually will scroll until that element is not appeared on page.
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(element));// Year dropdown is clickable
+        LOGGER.info("Year : " + element.getText());
         element.click();// Click "Location"
         /*
         LOGGER.info("Test 22");

@@ -58,22 +58,22 @@ public class Utils {
         driver.getWindowHandle();
         //Thread.sleep(2000);
         LOGGER.info("Test");
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(coat_of_arms));// "R" coat of arms is visible
+        wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
         //LOGGER.info("Test 22");
         Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
         LOGGER.info("Location field is present");
         Assert.assertTrue(ofNullable(driver.findElement((date_birth_field))).isPresent());
         LOGGER.info("DateBirth field is present");
         //clickLocationDropdown(driver);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         selectLocation(driver);
       //  Thread.sleep(2000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(date_birth));
         selectYear(driver);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        selectLanguage(driver,language_fr_fr);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(language_de));
-       // selectLanguage(driver, language_fr_fr);
         clickSubmitButton(driver);
 }
     public static void openHomePageAnonymous (WebDriver driver, String login, String password)throws InterruptedException{

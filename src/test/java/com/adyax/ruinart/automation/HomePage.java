@@ -8,6 +8,7 @@ public class HomePage {
     public static final By ruinart_logo_text = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[1]/span[3]/svg");
     public static final By newsletter_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[2]/span/span/svg");
     public static final By menu_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/span/span[1]/span/svg");
+    public static final By header = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/header");
     // slide 1 elements
     public static final By prev_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/button[1]");
     public static final By next_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/button[2]");
