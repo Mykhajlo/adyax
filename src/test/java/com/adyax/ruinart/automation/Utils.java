@@ -64,15 +64,14 @@ public class Utils {
         LOGGER.info("Location field is present");
         Assert.assertTrue(ofNullable(driver.findElement((date_birth_field))).isPresent());
         LOGGER.info("DateBirth field is present");
-        clickLocationDropdown(driver);
+        //clickLocationDropdown(driver);
         Thread.sleep(2000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         selectLocation(driver);
       //  Thread.sleep(2000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(date_birth));
-        //clickBirthDateDropdown(driver);
-        //selectYear(driver);
-        Thread.sleep(20000);
+        selectYear(driver);
+        Thread.sleep(2000);
         //wait.until(ExpectedConditions.visibilityOfElementLocated(language_de));
        // selectLanguage(driver, language_fr_fr);
         clickSubmitButton(driver);

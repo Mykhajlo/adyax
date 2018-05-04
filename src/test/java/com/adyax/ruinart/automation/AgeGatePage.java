@@ -1,9 +1,6 @@
 package com.adyax.ruinart.automation;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
@@ -29,9 +26,9 @@ public class AgeGatePage {
     public static final By coat_of_arms = By.xpath("//*[@id=\"drupal-modal\"]/div/div[1]/div[1]/div");
     public static final By location_name_field = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[1]/div[1]/div/span/span[1]");
     public static final By location_name  = By.xpath("//div[@class='jcf-option']"); // all locations 192 elements
-    public static final By test = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[1]/div[1]/div/span/div/div/span/div/span/ul/li[12]/span");
+    public static final By test = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[1]/div[1]/div/span/div/div/span/div/span/ul/li[63]/span");
     public static final By date_birth_field = By.xpath("//*[@id=\"agegate-date\"]/div[3]/span/span[1]");
-    public static final By date_birth = By.xpath("//span[@class='jcf-option']"); // all date birth 105 elements
+    public static final By date_birth = By.xpath("//*[@id=\"agegate-date\"]/div[3]/span/div/div/span/div/span/ul/li[58]/span"); // 1971 year
     public static final By submit_birth_button = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[3]");
     public static final By additional_info = By.xpath("//*[@id=\"mCSB_1_container\"]");
 
@@ -86,25 +83,28 @@ public class AgeGatePage {
         wait.until(ExpectedConditions.elementToBeClickable(submit_birth_button));// "Submit" button is clickable
         driver.findElement(submit_birth_button).click();// Click "Submit" Button
     }
-    public static  void selectLocation (WebDriver driver){
+    public static  void selectLocation (WebDriver driver) throws InterruptedException {
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         //wait.until(ExpectedConditions.elementToBeClickable(test));
+        // Create instance of Javascript executor
+        JavascriptExecutor je = (JavascriptExecutor) driver;
         LOGGER.info("Test 21");
-        driver.findElement(test).click();// Click "Location"
-
-
+        clickLocationDropdown(driver);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
+        WebElement element = driver.findElement(test);
+        je.executeScript("arguments[0].scrollIntoView(true);",element); // now execute query which actually will scroll until that element is not appeared on page.
+        Thread.sleep(2000);
+        element.click();// Click "Location"
 
         //Select drpLocation = new Select(driver.findElement(test));
        // drpLocation.selectByVisibleText("ALBANIA");
-        /*LOGGER.info("Test 21");
+        /*
         WebElement countrydropdown = driver.findElement(By.xpath("//span[@class='jcf-list-content']"));
         Select country = new Select(countrydropdown);
         country.selectByVisibleText("Japan");*/
-
-
         /*
         WebElement countryUL = driver.findElement(By.xpath("//span[@class='jcf-list-content']/ul"));
         List<WebElement> countriesList = countryUL.findElements(By.tagName("li"));
@@ -115,10 +115,7 @@ public class AgeGatePage {
         }  */
         LOGGER.info("Test 22");
 
-
-
         /*
-        LOGGER.info("Test 21");
         List<WebElement> webElementLocation = driver.findElements(date_birth);
         LOGGER.info("Total responses = " + webElementLocation.size());
         String[] locationName = new String[webElementLocation.size()];
@@ -132,7 +129,20 @@ public class AgeGatePage {
             // LOGGER.info("Results Response = " + responses[i]);
         }*/
     }
-    public static  void selectYear (WebDriver driver){// not finished
+    public static  void selectYear (WebDriver driver)throws InterruptedException {// not finished
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        LOGGER.info("Test 21");
+        clickBirthDateDropdown(driver);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
+        WebElement element = driver.findElement(date_birth);
+        je.executeScript("arguments[0].scrollIntoView(true);",element); // now execute query which actually will scroll until that element is not appeared on page.
+        Thread.sleep(2000);
+        element.click();// Click "Location"
+        /*
         LOGGER.info("Test 22");
         List<WebElement> webElementBirthDate = driver.findElements(date_birth);
         LOGGER.info("Total responses = " + webElementBirthDate.size());
@@ -171,14 +181,14 @@ public class AgeGatePage {
                 LOGGER.info("Year is selected");
                 break;
             }
-
+        */
         }
     public  static  void selectLanguage(WebDriver driver, By language){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-                wait.until(ExpectedConditions.elementToBeClickable(language));// "PDF" button is clickable
+                wait.until(ExpectedConditions.elementToBeClickable(language));// "Language" button is clickable
         driver.findElement(language).click();// Click "PDF" Button
     }
 }
