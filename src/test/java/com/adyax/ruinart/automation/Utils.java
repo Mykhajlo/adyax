@@ -56,26 +56,35 @@ public class Utils {
         //driver.get("https://pp2.ruinart.com/fr-e");
         driver.get(getURL());
         driver.getWindowHandle();
-        //Thread.sleep(2000);
         LOGGER.info("Test");
         wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
-        //LOGGER.info("Test 22");
         Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
         LOGGER.info("Location field is present");
         Assert.assertTrue(ofNullable(driver.findElement((date_birth_field))).isPresent());
         LOGGER.info("DateBirth field is present");
-        //clickLocationDropdown(driver);
-        //Thread.sleep(2000);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         selectLocation(driver);
-      //  Thread.sleep(2000);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(date_birth));
         selectYear(driver);
-        //Thread.sleep(2000);
         selectLanguage(driver,language_fr_fr);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(language_de));
         clickSubmitButton(driver);
+        LOGGER.info(driver.getCurrentUrl());
 }
+    public static void loginFranceHomePage(WebDriver driver) throws InterruptedException {
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        driver.get(getURL());
+        driver.getWindowHandle();
+        LOGGER.info("Test");
+        wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
+        Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
+        LOGGER.info("Location field is present");
+        Assert.assertTrue(ofNullable(driver.findElement((date_birth_field))).isPresent());
+        LOGGER.info("DateBirth field is present");
+        selectYear(driver);
+        clickSubmitButton(driver);
+        LOGGER.info("User at : " + driver.getCurrentUrl());
+    }
     public static void openHomePageAnonymous (WebDriver driver, String login, String password)throws InterruptedException{
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
@@ -110,5 +119,16 @@ public class Utils {
         }
         return link;
         }
-
+    public static void scrollToElement(WebDriver driver, By element){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        WebElement elementFF = driver.findElement(element);
+        je.executeScript("arguments[0].scrollIntoView(true);",elementFF); // now execute query which actually will scroll until that element is not appeared on page.
+        //Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(element));// Element is selected at dropdown
+        //LOGGER.info("Your element : " + element.getText());
+    }
 }
