@@ -46,21 +46,21 @@ public class HomePageBottleSliderTest {
 
         clickBottomArrow(driver);
         //Thread.sleep(2000);
-        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
+        //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
-        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title).getText());
+        LOGGER.info("test->>>> : " + index);
+        By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
 
         clickRightArrowSlider(driver);
         index = index +1;
 
         //scrollToElement(driver, prev_arrow_slide_first);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(slide_block, "class","slide-block slick-slide slick-current slick-active next-slide")));// "Left" is clickable
-
-       // wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
         LOGGER.info("test->>>> : " + index);
-        By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
         LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
+
         clickLeftArrowSlider(driver);
         index = index - 1;
 
@@ -68,9 +68,10 @@ public class HomePageBottleSliderTest {
         LOGGER.info("test->>>> : " + index);
         wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
         LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
-        clickRightArrowSlider(driver);
 
+        clickRightArrowSlider(driver);
         index = index + 1;
+
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         LOGGER.info("test->>>> : " + index);
         wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");

@@ -60,8 +60,8 @@
       <file leaf-file-name="HomePageBottleSliderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+            <state relative-caret-position="210">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -587,7 +587,7 @@
       <workItem from="1525331783455" duration="6537000" />
       <workItem from="1525429556399" duration="6767000" />
       <workItem from="1525673634604" duration="16938000" />
-      <workItem from="1525759541841" duration="25336000" />
+      <workItem from="1525759541841" duration="25949000" />
     </task>
     <task id="LOCAL-00001" summary="[001] - adding pages templates">
       <created>1522158442558</created>
@@ -652,16 +652,17 @@
       <option name="project" value="LOCAL" />
       <updated>1525783582449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[003] - update data to HomePageBottleSliderTest">
+      <created>1525786768565</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1525786768565</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 15h 59m 49s.xml">
-      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 01m 55s.xml">
-      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 02m 55s.xml">
       <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
     </history-entry>
@@ -683,12 +684,18 @@
     <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 39m 15s.xml">
       <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart_(2) - 2018.05.08 at 15h 59m 14s.xml">
-      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart (2)" configurationId="TestNG" />
+    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 44m 37s.xml">
+      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 45m 28s.xml">
+      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 48m 42s.xml">
+      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99734000" />
+    <option name="totallyTimeSpent" value="100347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1318,8 +1325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
