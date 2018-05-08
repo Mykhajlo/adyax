@@ -1,16 +1,16 @@
 package com.adyax.ruinart.automation;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static com.adyax.ruinart.automation.AgeGatePage.location_name_field;
+import static java.util.Optional.ofNullable;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.openqa.selenium.support.ui.ExpectedConditions.attributeContains;
@@ -32,8 +32,13 @@ public class HomePage {
     public static final By test = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div");
     public static final By discover_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/div/div/li[2]/div/div[2]/div/a");
     public static final By first_slide_dot_button = By.xpath("//*[@id=\"slick-slide00\"]/button");
-    public static final By third_slide_dot_button = By.xpath("//*[@id=\"slick-slide03\"]/button");
-    public static final By wine_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[2]/div/div[2]/div/h2");
+    public static final By third_slide_dot_button = By.xpath("//*[@id=\"slick-slide07\"]/button");
+    public static final By wine_title = By.xpath("//h2");
+    //public static final By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[6]/div/div[2]/div/h2");
+     public static final By slide_block = By.xpath("//li");
+
+                                                    //*[@id="ajax-redirect"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[6]/div/div[2]/div/h2
+    //public static final By wine_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[2]/div/div[2]/div/h2");
     public static final By wine_description = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/div/div/li[4]/div/div[2]/div/p");
     // slide actualites/news elements
     public static final By prev_arrow_slide_news = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[3]/div/div/div/ul/button[1]");
@@ -63,6 +68,20 @@ public class HomePage {
     public static final By it_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[3]/a");
     public static final By de_language = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[5]/div/div[1]/footer/div/ul[2]/li[6]/ul/li[4]/a");
 
+    public  static void returnToHomepage(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        //wait.until(ExpectedConditions.elementToBeClickable(bottom_arrow));// "Header"
+        //refresh current page
+        driver.navigate().refresh();
+        //wait.until(ExpectedConditions.elementToBeClickable(ruinart_logo_name));// "Header" is present
+        wait.until(ExpectedConditions.visibilityOfElementLocated(ruinart_logo_name));
+        driver.findElement(ruinart_logo_name).click();// Click "Header" -> homepage is opened
+
+    }
+
     public  static void clickBottomArrow(WebDriver driver){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
@@ -71,22 +90,42 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(bottom_arrow));// "Right" is clickable
         driver.findElement(bottom_arrow).click();// Click "Right"
     }
-    public  static void clickLeftSlider(WebDriver driver){
+    public  static void clickLeftArrowSlider(WebDriver driver){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         //wait.until(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating"));// "Left" is clickable
-        driver.findElement(prev_arrow_slide_first).click();// Click "Left"
+        if(!(driver.findElement(prev_arrow_slide_first)).getAttribute("class").contains("slick-prev slick-arrow slick-disabled")){
+            wait.until(ExpectedConditions.elementToBeClickable(prev_arrow_slide_first));// "Right" is clickable
+            driver.findElement(prev_arrow_slide_first).click();// Click "Left"
+        }else {
+            LOGGER.info("Left arrow button is not available");
+        }
+
     }
-    public  static void clickRightSlider(WebDriver driver){
+    public  static void clickRightArrowSlider(WebDriver driver){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-        wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide_first));// "Right" is clickable
-        driver.findElement(next_arrow_slide_first).click();// Click "Right"
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
+        if(!(driver.findElement(next_arrow_slide_first)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")){
+            wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide_first));// "Right" is clickable
+            driver.findElement(next_arrow_slide_first).click();// Click "Right"
+        }else {
+            LOGGER.info("Right arrow button is not available");
+        }
+    }
+    public  static void clickDotSlider(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
+        //wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide_first));// "Right" is clickable
+        driver.findElement(third_slide_dot_button).click();// Click "Dot"
     }
 
 }
