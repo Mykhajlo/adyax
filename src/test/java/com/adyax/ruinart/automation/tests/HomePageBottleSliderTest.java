@@ -41,7 +41,7 @@ public class HomePageBottleSliderTest {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-        Integer index = 1;
+       // Integer index = 1;
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
 
         clickBottomArrow(driver);
@@ -49,7 +49,7 @@ public class HomePageBottleSliderTest {
         //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
         LOGGER.info("test->>>> : " + index);
-        By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
         LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
 
         clickRightArrowSlider(driver);

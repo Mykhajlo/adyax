@@ -34,6 +34,9 @@ public class HomePage {
     public static final By first_slide_dot_button = By.xpath("//*[@id=\"slick-slide00\"]/button");
     public static final By third_slide_dot_button = By.xpath("//*[@id=\"slick-slide07\"]/button");
     public static final By wine_title = By.xpath("//h2");
+    public static  Integer index = 1;
+    public static By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+
     //public static final By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[6]/div/div[2]/div/h2");
      public static final By slide_block = By.xpath("//li");
 

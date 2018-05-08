@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81224a46-4f26-4321-9ae5-726ea20027f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,8 +45,8 @@
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="96" column="56" lean-forward="false" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+            <state relative-caret-position="387">
+              <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#returnToHomepage#0;class#HomePage#0" expanded="false" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="HomePageBottleSliderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -587,7 +588,7 @@
       <workItem from="1525331783455" duration="6537000" />
       <workItem from="1525429556399" duration="6767000" />
       <workItem from="1525673634604" duration="16938000" />
-      <workItem from="1525759541841" duration="25949000" />
+      <workItem from="1525759541841" duration="26465000" />
     </task>
     <task id="LOCAL-00001" summary="[001] - adding pages templates">
       <created>1522158442558</created>
@@ -659,16 +660,17 @@
       <option name="project" value="LOCAL" />
       <updated>1525786768565</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[003] - update data to HomePageBottleSliderTest">
+      <created>1525787380416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1525787380416</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 02m 55s.xml">
-      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 09m 21s.xml">
-      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 14m 31s.xml">
       <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
     </history-entry>
@@ -693,9 +695,15 @@
     <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 48m 42s.xml">
       <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 56m 35s.xml">
+      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageBottleSliderTest_HomePageBottleArrowSliderStart - 2018.05.08 at 16h 58m 04s.xml">
+      <configuration name="HomePageBottleSliderTest.HomePageBottleArrowSliderStart" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100347000" />
+    <option name="totallyTimeSpent" value="100863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,7 +727,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296433" sideWeight="0.5059701" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.091044776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19906868" sideWeight="0.49402985" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32363212" sideWeight="0.49402985" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28288707" sideWeight="0.49402985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3492433" sideWeight="0.59850746" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -859,7 +867,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java</url>
-          <line>84</line>
+          <line>87</line>
           <properties class="com.adyax.ruinart.automation.HomePage" method="clickBottomArrow">
             <option name="EMULATED" value="true" />
           </properties>
@@ -867,7 +875,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java</url>
-          <line>107</line>
+          <line>110</line>
           <properties class="com.adyax.ruinart.automation.HomePage" method="clickRightArrowSlider">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1311,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="96" column="56" lean-forward="false" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+        <state relative-caret-position="387">
+          <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#returnToHomepage#0;class#HomePage#0" expanded="false" />
@@ -1325,8 +1333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="248">
+          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
