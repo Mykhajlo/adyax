@@ -41,43 +41,40 @@ public class HomePageBottleSliderTest {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
+        Integer index = 1;
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
-        //Thread.sleep(5000);
 
         clickBottomArrow(driver);
         //Thread.sleep(2000);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
-        String wine = driver.findElement(wine_title).getText();
-        LOGGER.info("Next wine is displayed : " + wine);
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title).getText());
 
         clickRightArrowSlider(driver);
+        index = index +1;
 
         //scrollToElement(driver, prev_arrow_slide_first);
-        //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(slide_block, "class","slide-block slick-slide slick-current slick-active next-slide")));// "Left" is clickable
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
+        //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(slide_block, "class","slide-block slick-slide slick-current slick-active next-slide")));// "Left" is clickable
 
        // wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
-        Integer element_title = 2;
-        By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ element_title +"]/div/div[2]/div/h2");
-        wine = driver.findElement(wine_title1).getText();
-        LOGGER.info("Next wine is displayed : " + wine);
-
+        LOGGER.info("test->>>> : " + index);
+        By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
         clickLeftArrowSlider(driver);
+        index = index - 1;
 
-        //Thread.sleep(2000);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        element_title = 1;
-        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ element_title +"]/div/div[2]/div/h2");
-        wine = driver.findElement(wine_title1).getText();
-        LOGGER.info("Next wine is displayed : " + wine);
+        LOGGER.info("test->>>> : " + index);
+        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
         clickRightArrowSlider(driver);
 
+        index = index + 1;
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        element_title = 2;
-        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ element_title +"]/div/div[2]/div/h2");
-        wine = driver.findElement(wine_title1).getText();
-        LOGGER.info("Next wine is displayed : " + wine);
+        LOGGER.info("test->>>> : " + index);
+        wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title1).getText());
 
         clickRightArrowSlider(driver);
         clickLeftArrowSlider(driver);
