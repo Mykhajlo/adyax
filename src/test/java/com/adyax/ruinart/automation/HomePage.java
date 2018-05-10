@@ -4,13 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import static com.adyax.ruinart.automation.AgeGatePage.location_name_field;
-import static java.util.Optional.ofNullable;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.openqa.selenium.support.ui.ExpectedConditions.attributeContains;
@@ -32,10 +26,12 @@ public class HomePage {
     public static final By test = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div");
     public static final By discover_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/div/div/li[2]/div/div[2]/div/a");
     public static final By first_slide_dot_button = By.xpath("//*[@id=\"slick-slide00\"]/button");
-    public static final By third_slide_dot_button = By.xpath("//*[@id=\"slick-slide07\"]/button");
-    public static final By wine_title = By.xpath("//h2");
+    public static final By slide_dot_button = By.xpath("//*[@id=\"slick-slide07\"]/button");
+    //public static final String wine_title_part_1 = "//*[@id="ajax-redirect"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[";
+    public static final String wine_title_part_1 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[";
+    public static final String wine_title_part_2 = "]/div/div[2]/div/h2";
     public static  Integer index = 1;
-    public static By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+    public static By wine_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
 
     //public static final By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[6]/div/div[2]/div/h2");
      public static final By slide_block = By.xpath("//li");
@@ -121,6 +117,17 @@ public class HomePage {
             LOGGER.info("Right arrow button is not available");
         }
     }
+    public  static void showWineTitle(WebDriver driver, Integer index){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
+        LOGGER.info("test->>>> : " + index);
+        wine_title = By.xpath(wine_title_part_1 + index + wine_title_part_2);
+        //wine_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
+        LOGGER.info("Next wine is displayed : " + driver.findElement(wine_title).getText());
+    }
     public  static void clickDotSlider(WebDriver driver){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
@@ -128,7 +135,7 @@ public class HomePage {
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         //wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide_first));// "Right" is clickable
-        driver.findElement(third_slide_dot_button).click();// Click "Dot"
+        driver.findElement(slide_dot_button).click();// Click "Dot"
     }
 
 }
