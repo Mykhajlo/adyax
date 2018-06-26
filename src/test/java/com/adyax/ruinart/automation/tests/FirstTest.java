@@ -46,5 +46,6 @@ public class FirstTest {
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));// Header dropdown is clickable
         LOGGER.info("Test is finished");
+        LOGGER.info("Test is finished");
     }
 }
