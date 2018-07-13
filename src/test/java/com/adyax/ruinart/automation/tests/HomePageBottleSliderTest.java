@@ -17,7 +17,7 @@ import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class HomePageBottleSliderTest {
-    private static final Logger LOGGER = Logger.getLogger(FirstTest.class);
+    private static final Logger LOGGER = Logger.getLogger(HomePageBottleSliderTest.class);
     public static WebDriver driver;
 
     @BeforeClass
@@ -41,13 +41,15 @@ public class HomePageBottleSliderTest {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-       // Integer index = 1;
+        Integer index = 2;
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
-
+        LOGGER.info("KK");
         clickBottomArrow(driver);
+
         //Thread.sleep(2000);
         //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
+        LOGGER.info("PP");
         showWineTitle(driver,index);
         clickRightArrowSlider(driver);
         index = index + 1;

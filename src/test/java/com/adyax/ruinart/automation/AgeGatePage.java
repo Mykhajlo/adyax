@@ -31,6 +31,7 @@ public class AgeGatePage {
     public static final By date_birth = By.xpath("//*[@id=\"agegate-date\"]/div[3]/span/div/div/span/div/span/ul/li[58]/span"); // 1971 year
     public static final By submit_birth_button = By.xpath("//*[@id=\"agegate-form\"]/fieldset/div[3]");
     public static final By additional_info = By.xpath("//*[@id=\"mCSB_1_container\"]");
+    public static final By cookies_banner = By.id("_evidon-accept-button");
 
     public static final By language_field = By.xpath("//*[@id=\"mh-agegate-lang-block\"]/h4");
     public static final By language_fr_fr = By.xpath("//*[@id=\"mh-agegate-lang-block\"]/ul/li[1]/label");

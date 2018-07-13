@@ -76,6 +76,7 @@ public class Utils {
         driver.get(getURL());
         driver.getWindowHandle();
         LOGGER.info("Test");
+        acceptCookiesBanner(driver); // Accept Cookies Banner
         wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
         Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
         LOGGER.info("Location field is present");
@@ -130,5 +131,13 @@ public class Utils {
         //Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(element));// Element is selected at dropdown
         //LOGGER.info("Your element : " + element.getText());
+    }
+    public static  void acceptCookiesBanner(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(cookies_banner));// "Accept" title is visible
+        driver.findElement(cookies_banner).click();// Click "Accept"
     }
 }
