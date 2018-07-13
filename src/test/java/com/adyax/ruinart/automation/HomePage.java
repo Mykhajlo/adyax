@@ -17,8 +17,8 @@ public class HomePage {
     public static final By newsletter_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[2]/span/span/svg");
     public static final By menu_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/span/span[1]/span/svg");
     public static final By header = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/header");
-    public static final By bottom_arrow = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/span");
-    // slide 2 elements                             //*[@id="ajax-redirect"]/div/div/div[1]/div[2]/span
+    public static final By bottom_arrow = By.xpath("//span[@class='icon-scroll small-arrow']");
+    // slide 2 elements                             //*[@id="ajax-redirect"]/div/div/div[1]/div[3]/span
     //public static final By prev_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/button[1]");
     public static final By prev_arrow_slide_first = By.xpath("//button[@aria-label='Previous']");
     //public static final By next_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/button[2]");
@@ -30,7 +30,7 @@ public class HomePage {
     //public static final String wine_title_part_1 = "//*[@id="ajax-redirect"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[";
     public static final String wine_title_part_1 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[3]/div/div/ul/div/div/li[";
     public static final String wine_title_part_2 = "]/div/div[2]/div/h2";
-    public static  Integer index = 1;
+    public static  Integer index = 2;
     public static By wine_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li["+ index +"]/div/div[2]/div/h2");
                                             //*[@id="ajax-redirect"]/div/div/div[1]/div[3]/div/div/ul/div/div/li[2]/div/div[2]/div/h2
     //public static final By wine_title1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/div/div/li[6]/div/div[2]/div/h2");

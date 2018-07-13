@@ -48,7 +48,8 @@ public class HomePageBottleSliderTest {
 
         //Thread.sleep(2000);
         //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        wait.until(ExpectedConditions.visibilityOfElementLocated(wine_title));
+        //driver.findElement(wine_title);
+        wait.until(ExpectedConditions.presenceOfElementLocated(bottom_arrow));
         LOGGER.info("PP");
         showWineTitle(driver,index);
         clickRightArrowSlider(driver);
