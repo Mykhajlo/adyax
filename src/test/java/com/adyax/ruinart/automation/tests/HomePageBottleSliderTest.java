@@ -7,6 +7,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import static com.adyax.ruinart.automation.HomePage.*;
@@ -43,14 +44,16 @@ public class HomePageBottleSliderTest {
                 .ignoring(NoSuchElementException.class);
         Integer index = 2;
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
-        LOGGER.info("KK");
+        Assert.assertTrue(header.findElement(driver).isEnabled());
+        LOGGER.info("Header is present");
         clickBottomArrow(driver);
 
         //Thread.sleep(2000);
         //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         //driver.findElement(wine_title);
         wait.until(ExpectedConditions.presenceOfElementLocated(bottom_arrow));
-        LOGGER.info("PP");
+        Assert.assertTrue(bottom_arrow.findElement(driver).isEnabled());
+        LOGGER.info("Bottom arrow button is present");
         showWineTitle(driver,index);
         clickRightArrowSlider(driver);
         index = index + 1;
@@ -69,11 +72,13 @@ public class HomePageBottleSliderTest {
         index = index - 1;
         showWineTitle(driver,index);
 
+        //LOGGER.info("index = " + Integer.parseInt(driver.findElement(slide_dot_button).getText()));
         while(ofNullable(driver.findElement(next_arrow_slide_first)).isPresent() &&
-                !(driver.findElement(next_arrow_slide_first)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")) {
+                !(driver.findElement(next_arrow_slide_first)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")&&(index!= Integer.parseInt(driver.findElement(slide_dot_button).getText()) + 1)) {
             clickRightArrowSlider(driver);
-            index = index + 1;
+            index = index + 1; //*[@id="slick-slide07"]/button/text()
             showWineTitle(driver,index);
+            LOGGER.info("Bingo = " + index);
         }
         clickLeftArrowSlider(driver);
         index = index - 1;
@@ -88,8 +93,9 @@ public class HomePageBottleSliderTest {
         index = index + 1;
         showWineTitle(driver,index);
         clickDotSlider(driver);
-        LOGGER.info("Test Dot Button - ok");
         clickLeftArrowSlider(driver);
+        index = index - 1;
+        showWineTitle(driver,index);
         clickRightArrowSlider(driver);
         LOGGER.info("Test is finished");
     }
