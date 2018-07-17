@@ -43,19 +43,30 @@ public class LeSavoirFaireTest {
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
+        int slide = 1;
+        int index = 1;
         Assert.assertTrue(header.findElement(driver).isEnabled());
         LOGGER.info("Header is present");
         openMenu(driver);
         Assert.assertTrue(menu_block.findElement(driver).isEnabled());
         LOGGER.info("Menu is present");
-        openLeSavoirFairePage(driver, title_LeSavoirFairePage);
+        openLeSavoirFairePage(driver, loadLeSavoirFairePage);
         //Thread.sleep(2000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(header));
-        Assert.assertTrue(header.findElement(driver).isEnabled());
-        LOGGER.info("Header is present");
-        clickBottomArrow(driver);
-        clickLeftArrowSlider(driver);
-        clickRightArrowSlider(driver);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(title_LeSavoirFairePage));
+        Assert.assertTrue(title_LeSavoirFairePage.findElement(driver).isEnabled());
+        LOGGER.info("Header is present = " + driver.findElement(title_LeSavoirFairePage).getText());
+        clickBottomArrow(driver,slide);
+        slide = slide +1;
+        clickBottomArrow(driver,slide);
+        slide = slide +1;
+        clickBottomArrow(driver,slide);
+       /* clickLeftArrowSliderLeSavoirFairePage(driver, index);
+        index = index - 1;
+        clickRightArrowLeSavoirFairePage(driver, index);
+        index = index + 1;
+        clickLeftArrowSliderLeSavoirFairePage(driver,index);
+        slide = slide +1;  */
         Thread.sleep(2000);
     }
+
 }

@@ -46,8 +46,8 @@ public class HomePageBottleSliderTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
         Assert.assertTrue(header.findElement(driver).isEnabled());
         LOGGER.info("Header is present");
-        clickBottomArrow(driver);
-
+        //int slide = 2;
+        clickBottomArrowHomePage(driver);
         //Thread.sleep(2000);
         //wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         //driver.findElement(wine_title);
@@ -55,48 +55,49 @@ public class HomePageBottleSliderTest {
         Assert.assertTrue(bottom_arrow.findElement(driver).isEnabled());
         LOGGER.info("Bottom arrow button is present");
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         index = index + 1;
         showWineTitle(driver,index);
         //scrollToElement(driver, prev_arrow_slide_first);
-        clickLeftArrowSlider(driver);
+        clickLeftArrowSliderHomePage(driver,index);
         index = index - 1;
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         index = index + 1;
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         index = index + 1;
         showWineTitle(driver,index);
-        clickLeftArrowSlider(driver);
+        clickLeftArrowSliderHomePage(driver,index);
         index = index - 1;
         showWineTitle(driver,index);
+        LOGGER.info("Bingo loop = " + index);
 
         //LOGGER.info("index = " + Integer.parseInt(driver.findElement(slide_dot_button).getText()));
-        while(ofNullable(driver.findElement(next_arrow_slide_first)).isPresent() &&
-                !(driver.findElement(next_arrow_slide_first)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")&&(index!= Integer.parseInt(driver.findElement(slide_dot_button).getText()) + 1)) {
-            clickRightArrowSlider(driver);
+        while(ofNullable(driver.findElement(next_arrow_slide)).isPresent() &&
+                !(driver.findElement(next_arrow_slide)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")&&(index!= Integer.parseInt(driver.findElement(slide_dot_button).getText()) + 1)) {
+            clickRightArrowSliderHomePage(driver,index);
             index = index + 1; //*[@id="slick-slide07"]/button/text()
             showWineTitle(driver,index);
             LOGGER.info("Bingo = " + index);
         }
-        clickLeftArrowSlider(driver);
+        clickLeftArrowSliderHomePage(driver,index);
         index = index - 1;
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         index = index + 1;
         showWineTitle(driver,index);
-        clickLeftArrowSlider(driver);
+        clickLeftArrowSliderHomePage(driver,index);
         index = index - 1;
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         index = index + 1;
         showWineTitle(driver,index);
         clickDotSlider(driver);
-        clickLeftArrowSlider(driver);
+        clickLeftArrowSliderHomePage(driver,index);
         index = index - 1;
         showWineTitle(driver,index);
-        clickRightArrowSlider(driver);
+        clickRightArrowSliderHomePage(driver,index);
         LOGGER.info("Test is finished");
     }
 }

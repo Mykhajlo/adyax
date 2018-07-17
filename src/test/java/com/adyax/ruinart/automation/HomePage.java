@@ -27,16 +27,21 @@ public class HomePage {
     public static final String menu_item_2_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[2]/ul/li[";
     public static final String menu_item_2_part_1 = "]/a";
     public static final By header = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/header");
-    public static final By bottom_arrow = By.xpath("//span[@class='icon-scroll small-arrow']");
+    public static  By bottom_arrow = By.xpath("//span[@class='icon-scroll small-arrow']");
+    public static final String bottom_arrow_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
+    public static final String bottom_arrow_part_1 = "]/span";
+    public static final By page_moving = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[1]");
     // slide 2 elements                             //*[@id="ajax-redirect"]/div/div/div[1]/div[3]/span
     //public static final By prev_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/button[1]");
-    public static final By prev_arrow_slide_first = By.xpath("//button[@aria-label='Previous']");
+    public static  By prev_arrow_slide = By.xpath("//button[@aria-label='Previous']");
+    public static final String prev_arrow_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
+    public static final String prev_arrow_part_1 = "]/div/div/div/ul/button[1]";
     //public static final By next_arrow_slide_first = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/ul/button[2]");
-    public static final By next_arrow_slide_first = By.xpath("//button[@aria-label='Next']");
+    public static  By next_arrow_slide = By.xpath("//button[@aria-label='Next']");
+    public static final String next_arrow_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
+    public static final String next_arrow_part_1 = "]/div/div/div/ul/button[2]";
     public static final By test = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[3]/div");
     public static final By discover_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/div[1]/div[2]/div/div/ul/div/div/li[2]/div/div[2]/div/a");
-    public static final By page_moving = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[1]");
-                                                 //*[@id="ajax-redirect"]/div/div/div[1]/div[1]
     public static final By first_slide_dot_button = By.xpath("//*[@id=\"slick-slide00\"]/button");
     public static final By slide_dot_button = By.xpath("//*[@id=\"slick-slide07\"]/button");
 
@@ -89,47 +94,46 @@ public class HomePage {
 
     }
 
-    public  static void clickBottomArrow(WebDriver driver) throws InterruptedException {
+    public  static void clickBottomArrowHomePage(WebDriver driver) throws InterruptedException {
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_moving, "class","active")));
-         //wait.until(ExpectedConditions.elementToBeClickable(bottom_arrow));
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_moving, "class","active")));
+        //wait.until(ExpectedConditions.elementToBeClickable(bottom_arrow));
         //Thread.sleep(2000);
         if (driver.findElement(bottom_arrow).isDisplayed()){
             wait.until(ExpectedConditions.elementToBeClickable(bottom_arrow));
             driver.findElement(bottom_arrow).click();// Click "Bottom"
-            LOGGER.info("Bottom arrow is clicked");
+            LOGGER.info("Bottom arrow is clicked !");
         }else {
             LOGGER.info("Bottom arrow button is not available");
         }
-
     }
-    public  static void clickLeftArrowSlider(WebDriver driver){
+    public  static void clickLeftArrowSliderHomePage(WebDriver driver, Integer index){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
         //wait.until(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating"));// "Left" is clickable
-        if(!(driver.findElement(prev_arrow_slide_first)).getAttribute("class").contains("slick-prev slick-arrow slick-disabled")){
-            wait.until(ExpectedConditions.elementToBeClickable(prev_arrow_slide_first));// "Left" is clickable
-            driver.findElement(prev_arrow_slide_first).click();// Click "Left"
+        if(!(driver.findElement(prev_arrow_slide)).getAttribute("class").contains("slick-prev slick-arrow slick-disabled")){
+            wait.until(ExpectedConditions.elementToBeClickable(prev_arrow_slide));// "Left" is clickable
+            driver.findElement(prev_arrow_slide).click();// Click "Left"
         }else {
             LOGGER.info("Left arrow button is not available");
         }
 
     }
-    public  static void clickRightArrowSlider(WebDriver driver){
+    public  static void clickRightArrowSliderHomePage(WebDriver driver, Integer index){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(test, "class","product-gallery gallery-is-animating")));// "Left" is clickable
-        if(!(driver.findElement(next_arrow_slide_first)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")){
-            wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide_first));// "Right" is clickable
-            driver.findElement(next_arrow_slide_first).click();// Click "Right"
+        if(!(driver.findElement(next_arrow_slide)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")){
+            wait.until(ExpectedConditions.elementToBeClickable(next_arrow_slide));// "Right" is clickable
+            driver.findElement(next_arrow_slide).click();// Click "Right"
         }else {
             LOGGER.info("Right arrow button is not available");
         }
@@ -179,8 +183,8 @@ public class HomePage {
         menu_item_2 = By.xpath(menu_item_2_part_0 + index + menu_item_2_part_1);
         wait.until(ExpectedConditions.visibilityOfElementLocated(menu_item_2));
         driver.findElement(menu_item_2).click();// Click "Dot"
-        wait.until(ExpectedConditions.visibilityOfElementLocated(element));
-        LOGGER.info("Menu is opened");
+        wait.until(ExpectedConditions.attributeContains(element, "class","page-loaded"));
+        LOGGER.info("Page is opened");
     }
 }
 
