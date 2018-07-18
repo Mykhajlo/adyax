@@ -13,4 +13,10 @@
             <class name="com.adyax.ruinart.automation.tests.HomePageBottleSliderTest"/>
         </classes>
     </test>
+
+    <test name="Test_3">
+        <classes>
+            <class name="com.adyax.ruinart.automation.tests.MaisonRuinartTest"/>
+        </classes>
+    </test>
 </suite>

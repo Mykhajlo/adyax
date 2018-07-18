@@ -11,15 +11,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static com.adyax.ruinart.automation.HistoryPage.*;
 import static com.adyax.ruinart.automation.HomePage.*;
-import static com.adyax.ruinart.automation.LeSavoirFairePage.*;
+import static com.adyax.ruinart.automation.LeSavoirFairePage.slideTitleLeSavoirFairePage;
 import static com.adyax.ruinart.automation.Utils.loginFranceHomePage;
 import static com.adyax.ruinart.automation.Utils.setupEnvironment;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class LeSavoirFaireTest {
-    private static final Logger LOGGER = Logger.getLogger(LeSavoirFaireTest.class);
+public class MaisonRuinartTest {
+    private static final Logger LOGGER = Logger.getLogger(MaisonRuinartTest.class);
     public static WebDriver driver;
 
     @BeforeClass
@@ -37,42 +38,41 @@ public class LeSavoirFaireTest {
         driver.quit();
     }
     @Test
-    public void LeSavoirFairePageTest () throws Exception{
+    public void MaisonRuinartPageTest () throws Exception {
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.visibilityOfElementLocated(header));
         int slide = 1;
-        //int index = 1;
         Assert.assertTrue(header.findElement(driver).isEnabled());
         LOGGER.info("Header is present");
         openMenu(driver);
         Assert.assertTrue(menu_block.findElement(driver).isEnabled());
         LOGGER.info("Menu is present");
-        openLeSavoirFairePage(driver, loadLeSavoirFairePage);
+        openMenuPage(driver, 1,1,loadHistoryPage);
         //Thread.sleep(2000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(title_LeSavoirFairePage));
-        Assert.assertTrue(title_LeSavoirFairePage.findElement(driver).isEnabled());
-        LOGGER.info("Header is present = " + driver.findElement(title_LeSavoirFairePage).getText());
-        clickBottomArrowLeSavoirFairePage(driver,slide);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(title_HistoryPage));
+        Assert.assertTrue(title_HistoryPage.findElement(driver).isEnabled());
+        LOGGER.info("Header is present = " + driver.findElement(title_HistoryPage).getText());
+        //Thread.sleep(2000);
+        clickBottomArrowHistoryPage(driver,slide);
         slide = slide +1;
-        Assert.assertTrue((slideTitleLeSavoirFairePage(driver,slide)).findElement(driver).isEnabled());
-        LOGGER.info("Slide title = " + driver.findElement(slideTitleLeSavoirFairePage(driver,slide)).getText());
-        clickBottomArrowLeSavoirFairePage(driver,slide);
+        Assert.assertTrue((slideTitleHistoryPage(driver,slide)).findElement(driver).isEnabled());
+        LOGGER.info("Slide title = " + driver.findElement(slideTitleHistoryPage(driver,slide)).getText());
+        clickBottomArrowHistoryPage(driver,slide);
         slide = slide +1;
-        Assert.assertTrue((slideTitleLeSavoirFairePage(driver,slide)).findElement(driver).isEnabled());
-        LOGGER.info("Slide title = " + driver.findElement(slideTitleLeSavoirFairePage(driver,slide)).getText());
-        clickBottomArrowLeSavoirFairePage(driver,slide);
+        Assert.assertTrue((slideTitleHistoryPage(driver,slide)).findElement(driver).isEnabled());
+        LOGGER.info("Slide title = " + driver.findElement(slideTitleHistoryPage(driver,slide)).getText());
+        clickBottomArrowHistoryPage(driver,slide);
         slide = slide +1;
-        Assert.assertTrue((slideTitleLeSavoirFairePage(driver,slide)).findElement(driver).isEnabled());
-        LOGGER.info("Slide title = " + driver.findElement(slideTitleLeSavoirFairePage(driver,slide)).getText());
-        clickRightArrowLeSavoirFairePage(driver, slide);
-        clickRightArrowLeSavoirFairePage(driver, slide);
-        clickLeftArrowLeSavoirFairePage(driver,slide);
-        clickLeftArrowLeSavoirFairePage(driver,slide);
-        clickRightArrowLeSavoirFairePage(driver, slide);
+        Assert.assertTrue((slideTitleHistoryPage(driver,slide)).findElement(driver).isEnabled());
+        LOGGER.info("Slide title = " + driver.findElement(slideTitleHistoryPage(driver,slide)).getText());
+        clickBottomArrowHistoryPage(driver,slide);
+        slide = slide +1;
+        clickUpButtonHistoryPage(driver,slide);
+        slide = 1;
+        //Thread.sleep(2000);
         LOGGER.info("Test is finished");
     }
-
 }

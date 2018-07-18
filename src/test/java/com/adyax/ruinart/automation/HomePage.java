@@ -24,8 +24,12 @@ public class HomePage {
     public static final String menu_item_1_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[";
     public static final String menu_item_1_part_1 = "]/a";
     public static  By menu_item_2 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[2]/ul/li[1]/a");
-    public static final String menu_item_2_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[2]/ul/li[";
-    public static final String menu_item_2_part_1 = "]/a";
+    public static final String menu_item_2_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[";
+    public static final String menu_item_2_part_1 = "]/ul/li[";
+    public static final String menu_item_2_part_2 = "]/a";
+    //*[@id="ajax-redirect"]/div/div/div[2]/div[1]/div[1]/div/ul/li[1]/ul/li[1]/a
+    //*[@id="ajax-redirect"]/div/div/div[2]/div[1]/div[1]/div/ul/li[2]/ul/li[1]/a
+    //*[@id="ajax-redirect"]/div/div/div[2]/div[1]/div[1]/div/ul/li[2]/ul/li[1]/a
     public static final By header = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/header");
     public static  By bottom_arrow = By.xpath("//span[@class='icon-scroll small-arrow']");
     public static final String bottom_arrow_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
@@ -186,5 +190,20 @@ public class HomePage {
         wait.until(ExpectedConditions.attributeContains(element, "class","page-loaded"));
         LOGGER.info("Page is opened");
     }
+    public  static void openMenuPage(WebDriver driver, Integer index_1, Integer index_2, By element )throws InterruptedException{
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        menu_item_1 = By.xpath(menu_item_1_part_0 + index_1 + menu_item_1_part_1);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(menu_item_1));
+        driver.findElement(menu_item_1).click();// Open menu "Le Savoir Faire"
+        menu_item_2 = By.xpath(menu_item_2_part_0 + index_1 + menu_item_2_part_1 + index_2 + menu_item_2_part_2 );
+        wait.until(ExpectedConditions.visibilityOfElementLocated(menu_item_2));
+        driver.findElement(menu_item_2).click();// Click "Dot"
+        wait.until(ExpectedConditions.attributeContains(element, "class","page-loaded"));
+        LOGGER.info("Page is opened");
+    }
+
 }
 

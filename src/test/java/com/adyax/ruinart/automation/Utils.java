@@ -140,4 +140,5 @@ public class Utils {
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookies_banner));// "Accept" title is visible
         driver.findElement(cookies_banner).click();// Click "Accept"
     }
+
 }
