@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.security.UserAndPassword;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
@@ -74,8 +75,12 @@ public class Utils {
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
         driver.get(getURL());
+        //driver.switchTo().alert().sendKeys("ruinart" + Keys.TAB + "geRu6eil");
+        //driver.switchTo().alert().accept();
+        //httpAuth(driver);
         driver.getWindowHandle();
         LOGGER.info("Test");
+        //httpAuth(driver);
         acceptCookiesBanner(driver); // Accept Cookies Banner
         wait.until(ExpectedConditions.elementToBeClickable(location_name_field));// Location dropdown is clickable
         Assert.assertTrue(ofNullable(driver.findElement((location_name_field))).isPresent());
@@ -137,8 +142,20 @@ public class Utils {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(cookies_banner));// "Accept" title is visible
-        driver.findElement(cookies_banner).click();// Click "Accept"
+        if ((driver.findElement(cookies_banner)).isEnabled()){
+            wait.until(ExpectedConditions.visibilityOfElementLocated(cookies_banner));// "Accept" title is visible
+            driver.findElement(cookies_banner).click();// Click "Accept"
+            LOGGER.info("Cookies banner is accepted");
+        }else
+        LOGGER.info("Cookies banner is not present");
+    }
+    public static void httpAuth (WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+        alert.authenticateUsing(new UserAndPassword("ruinart", "geRu6eil"));
     }
 
 }

@@ -34,10 +34,19 @@ public class ArtistPage {
     public static final String previous_artistiques_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
     public static final String previous_artistiques_part_1 = "]/div/div/div/ul/button[1]";
 
+    public static  By tabindex = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[5]/div/div/div/ul/div/div/li[1]/div[1]/a");
+    public static final String tabindex_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
+    public static final String tabindex_part_1 = "]/div/div/div/ul/div/div/li[";
+    public static final String tabindex_part_2 = "]/div[1]/a";
+
+    //*[@id="ajax-redirect"]/div/div/div[1]/div[5]/div/div/div/ul/div/div/li[1]/div[1]/a
+    //*[@id="ajax-redirect"]/div/div/div[1]/div[5]/div/div/div/ul/div/div/li[2]/div[1]/a
+
     public static  By artistiques_block = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[5]/div/div/div/ul/div/div/li[1]");
     public static final String artistiques_block_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
     public static final String artistiques_block_part_1 = "]/div/div/div/ul/div/div/li[";
     public static final String artistiques_block_part_2 = "]";
+    public static final By top_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/button");
 
 
     public static void checkArtistNameDetail (WebDriver driver, Integer slide){
@@ -80,41 +89,56 @@ public class ArtistPage {
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class); //*[@id="ajax-redirect"]/div/div/div[1]/div[4]
         next_artistiques = By.xpath(next_artistiques_part_0 + slide + next_artistiques_part_1);
-        page_moving = By.xpath(page_moving_part_0 + slide + page_moving_part_1);
         artistiques_block = By.xpath(artistiques_block_part_0 + slide + artistiques_block_part_1 + index + artistiques_block_part_2);
-        wait.until(ExpectedConditions.attributeContains(page_moving, "class","active fp-completely"));
-        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load, "class","loading")));
-        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load_content, "class","anim-start")));
-        LOGGER.info("Bingo 1 = " + artistiques_block);
-        wait.until(ExpectedConditions.attributeContains(artistiques_block, "class","slick-current"));
+        tabindex = By.xpath(tabindex_part_0 + slide + tabindex_part_1 + index + tabindex_part_2);
+        wait.until(ExpectedConditions.attributeToBe(artistiques_block, "class","slide-block news-block slick-slide slick-current slick-active"));
+        LOGGER.info("TTT---> " + (driver.findElement(artistiques_block)).getAttribute("class").toString());
         if(!(driver.findElement(next_artistiques)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")){
-           // Thread.sleep(2000);
-
-           // wait.until(ExpectedConditions.attributeContains(next_artistiques, "aria-disabled","false"));
+            wait.until(ExpectedConditions.elementToBeClickable(next_artistiques));
             driver.findElement(next_artistiques).click();// Click "Right"
             LOGGER.info("Right arrow button is clicked");
-            artistiques_block = By.xpath(artistiques_block_part_0 + slide + artistiques_block_part_1 + (index + 3) + artistiques_block_part_2);
-            wait.until(ExpectedConditions.attributeContains(artistiques_block, "class","slick-active"));
-            LOGGER.info("Bingo");
-        }else {
+            wait.until(ExpectedConditions.attributeToBe(tabindex, "tabindex","-1"));
+            LOGGER.info("uuu---> " + (driver.findElement(artistiques_block)).getAttribute("class").toString());
+         }else {
             LOGGER.info("Right arrow button is not available!");
         }
     }
-    public  static void clickLeftArrowCarouselArtistiques (WebDriver driver, Integer slide){
+    public  static void clickLeftArrowCarouselArtistiques (WebDriver driver, Integer slide, Integer index){
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
-                .ignoring(NoSuchElementException.class); //*[@id="ajax-redirect"]/div/div/div[1]/div[4]
+                .ignoring(NoSuchElementException.class);
         previous_artistiques = By.xpath(previous_artistiques_part_0 + slide + previous_artistiques_part_1);
-        page_moving = By.xpath(page_moving_part_0 + slide + page_moving_part_1);
-        wait.until(ExpectedConditions.attributeContains(page_moving, "class","active fp-completely"));
+        artistiques_block = By.xpath(artistiques_block_part_0 + slide + artistiques_block_part_1 + index + artistiques_block_part_2);
+        tabindex = By.xpath(tabindex_part_0 + slide + tabindex_part_1 + (index+2) + tabindex_part_2);
+        wait.until(ExpectedConditions.attributeToBe(artistiques_block, "class","slide-block news-block slick-slide slick-current slick-active"));
+        LOGGER.info("TTT---> " + (driver.findElement(artistiques_block)).getAttribute("class").toString());
         if(!(driver.findElement(previous_artistiques)).getAttribute("class").contains("slick-next slick-arrow slick-disabled")){
-            wait.until(ExpectedConditions.attributeContains(previous_artistiques, "aria-disabled","false"));
-            driver.findElement(previous_artistiques).click();// Click "Left"
-            LOGGER.info("Left arrow button is clicked!");
+            wait.until(ExpectedConditions.elementToBeClickable(previous_artistiques));
+            driver.findElement(previous_artistiques).click();// Click "Right"
+            LOGGER.info("Left arrow button is clicked");
+            wait.until(ExpectedConditions.attributeToBe(tabindex, "tabindex","-1"));
+            LOGGER.info("uuu---> " + (driver.findElement(artistiques_block)).getAttribute("class").toString());
         }else {
             LOGGER.info("Left arrow button is not available!!");
         }
     }
-
+    public static void clickUpButtonArtistPage(WebDriver driver, Integer slide){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        page_moving = By.xpath(page_moving_part_0 + slide + page_moving_part_1);
+        wait.until(ExpectedConditions.attributeContains(page_moving, "class","active fp-completely"));
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load, "class","loading")));
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load_content, "class","anim-start")));
+        if (driver.findElement(top_button).isDisplayed()){
+            wait.until(ExpectedConditions.attributeContains(top_button, "class","is-show"));
+            driver.findElement(top_button).click();// Click "Top"
+            LOGGER.info("Top button is clicked!!");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(artist_Name));
+        }else {
+            LOGGER.info("Top button is not available");
+        }
+    }
 }

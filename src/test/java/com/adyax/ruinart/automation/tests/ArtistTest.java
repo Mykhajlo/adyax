@@ -59,18 +59,30 @@ public class ArtistTest {
         slide = slide+1;
         clickBottomArrowArtistPage(driver,slide);
         slide = slide+1;
-        clickBottomArrowArtistPage(driver,slide);       //*[@id="ajax-redirect"]/div/div/div[1]/div[5]/div/div/ul/button[2]
+        clickBottomArrowArtistPage(driver,slide);
         slide = slide+1;
-        clickRightArrowCarouselArtistiques(driver,slide,index); //*[@id="ajax-redirect"]/div/div/div[1]/div[5]/div/div/div/ul/button[2]
-        index = index + 1;
-        clickRightArrowCarouselArtistiques(driver,slide,index); //*[@id="ajax-redirect"]/div/div/div[1]/div[5]/div/div/div/ul/button[2]
-        index = index + 1;
-       // clickLeftArrowCarouselArtistiques(driver,slide);
-        /*clickRightArrowCarouselArtistiques(driver,slide,index);
+        clickRightArrowCarouselArtistiques(driver,slide,index);
         index = index + 1;
         clickRightArrowCarouselArtistiques(driver,slide,index);
-        index = index + 1;*/
-        Thread.sleep(2000);
+        index = index + 1;
+        clickRightArrowCarouselArtistiques(driver,slide,index);
+        index = index + 1;
+        clickRightArrowCarouselArtistiques(driver,slide,index);
+        index = index + 1;
+        clickLeftArrowCarouselArtistiques(driver,slide, index);
+        index = index - 1;
+        clickRightArrowCarouselArtistiques(driver,slide,index);
+        index = index + 1;
+        clickLeftArrowCarouselArtistiques(driver,slide, index);
+        index = index - 1;
+        clickLeftArrowCarouselArtistiques(driver,slide, index);
+        index = index - 1;
+        clickLeftArrowCarouselArtistiques(driver,slide, index);
+        index = index - 1;
+        clickRightArrowCarouselArtistiques(driver,slide,index);
+        index = index + 1;
+        clickUpButtonArtistPage(driver,slide);
+        //Thread.sleep(10000);
         LOGGER.info("Test is passed");
     }
 }

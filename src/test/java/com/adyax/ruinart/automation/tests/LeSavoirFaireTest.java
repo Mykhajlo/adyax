@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static com.adyax.ruinart.automation.ArtistPage.loadArtistPage;
 import static com.adyax.ruinart.automation.HomePage.*;
 import static com.adyax.ruinart.automation.LeSavoirFairePage.*;
 import static com.adyax.ruinart.automation.Utils.loginFranceHomePage;
@@ -50,7 +51,8 @@ public class LeSavoirFaireTest {
         openMenu(driver);
         Assert.assertTrue(menu_block.findElement(driver).isEnabled());
         LOGGER.info("Menu is present");
-        openLeSavoirFairePage(driver, loadLeSavoirFairePage);
+        openMenuPage(driver, 2, 1, loadLeSavoirFairePage);
+        //openLeSavoirFairePage(driver, loadLeSavoirFairePage);
         //Thread.sleep(2000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(title_LeSavoirFairePage));
         Assert.assertTrue(title_LeSavoirFairePage.findElement(driver).isEnabled());
