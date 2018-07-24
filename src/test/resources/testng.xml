@@ -1,6 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
+
 <suite thread-count="1" verbose="1" name="Ruinart Suite" annotations="JDK" parallel="tests">
+    <listeners>
+
+        <listener class-name="com.adyax.ruinart.automation.Listener"></listener>
+
+    </listeners>
 
     <test name="Test_1">
         <classes>
@@ -8,15 +14,4 @@
         </classes>
     </test>
 
-    <test name="Test_2">
-        <classes>
-            <class name="com.adyax.ruinart.automation.tests.HomePageBottleSliderTest"/>
-        </classes>
-    </test>
-
-    <test name="Test_3">
-        <classes>
-            <class name="com.adyax.ruinart.automation.tests.MaisonRuinartTest"/>
-        </classes>
-    </test>
 </suite>

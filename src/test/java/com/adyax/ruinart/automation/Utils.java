@@ -1,5 +1,6 @@
 package com.adyax.ruinart.automation;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,10 +10,14 @@ import org.openqa.selenium.security.UserAndPassword;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -26,8 +31,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  */
 public class Utils {
     private static final Logger LOGGER = Logger.getLogger(Utils.class);
-
-
+    public static WebDriver driver;
     public static ChromeDriver setupEnvironment() {
         //System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver.dmg");
         String osName = System.getProperty("os.name").toLowerCase();
@@ -36,6 +40,13 @@ public class Utils {
         }
         if (osName.contains("mac")) {
             System.setProperty("webdriver.chrome.driver", "src//test//resources//chromedriver");
+        } else if (osName.contains("linux")
+                || osName.contains("mpe/ix")
+                || osName.contains("freebsd")
+                || osName.contains("irix")
+                || osName.contains("digital unix")
+                || osName.contains("unix")) {
+            System.setProperty("webdriver.chrome.driver", "src//test//resources//chromedriver_linux64");
         }
         //linux
         ChromeOptions options = new ChromeOptions();
@@ -157,5 +168,33 @@ public class Utils {
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         alert.authenticateUsing(new UserAndPassword("ruinart", "geRu6eil"));
     }
+    public static void takeScreenshot(WebDriver driver) throws Exception {
+        String timeStamp;
+        File screenShotName;
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//The below method will save the screen shot in d drive with name "screenshot.png"
+        timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+        screenShotName = new File("src//test//screenshots"+timeStamp+".png");
+        FileUtils.copyFile(scrFile, screenShotName);
+
+        String filePath = screenShotName.toString();
+        String path = "";
+        LOGGER.info(path);
+    }
+    /*public static  WebDriver getDriver(WebDriver driver) {
+        LOGGER.info("Test is gogogogogog = " + driver);
+        return driver;
+    }*/
+    /*public void failed(WebDriver driver){
+        LOGGER.info("Test is gogogogogog = " + driver);
+        File scrFile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File scrName = new File("C:\\Users\\adyax-021\\IdeaProjects\\ruinart_tests\\src\\test\\screenshots\\" + driver.getTitle() + ".png");
+        try {
+            FileUtils.copyFile(scrFile,scrName);
+            Reporter.log("<br><img scr ='" + scrName + "' height ='400' width = '400'/><br>");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }*/
 
 }

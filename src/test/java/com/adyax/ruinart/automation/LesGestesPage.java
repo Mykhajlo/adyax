@@ -111,6 +111,7 @@ public class LesGestesPage {
         prev_arrow_slide = By.xpath(prev_arrow_part_0 + slide + prev_arrow_part_1);
         artistiques_block = By.xpath(artistiques_block_part_0 + slide + artistiques_block_part_1 + index + artistiques_block_part_2);
         wait.until(ExpectedConditions.attributeContains(artistiques_block, "class","slick-current slick-active"));
+        LOGGER.info("OOO = " + artistiques_block);
         LOGGER.info("UU---> " + (driver.findElement(artistiques_block)).getAttribute("class").toString());
         if(!(driver.findElement(prev_arrow_slide)).getAttribute("class").contains("slick-prev slick-arrow slick-disabled")){
             wait.until(ExpectedConditions.attributeToBe(prev_arrow_slide, "aria-disabled","false"));

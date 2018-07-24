@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 
 
 import static com.adyax.ruinart.automation.HomePage.*;
-import static com.adyax.ruinart.automation.LeSavoirFairePage.slideTitleLeSavoirFairePage;
 import static com.adyax.ruinart.automation.LesGestesPage.*;
 import static com.adyax.ruinart.automation.Utils.loginFranceHomePage;
 import static com.adyax.ruinart.automation.Utils.setupEnvironment;
@@ -79,12 +78,12 @@ public class LesGestesTest {
         slide = slide+1;
         clickRightArrowLesGestes(driver,slide, index);
         index = index +1;
-        clickRightArrowLesGestes(driver,slide, index);
+        //clickRightArrowLesGestes(driver,slide, index);
         //index = index +1;
         clickLeftArrowLesGeste(driver,slide, index);
         index = index -1;
-        clickLeftArrowLesGeste(driver,slide, index);
-        index = index -1;
+        //clickLeftArrowLesGeste(driver,slide, index);
+        //index = index -1;
         Thread.sleep(5000);
         LOGGER.info("Test is finished");
     }
