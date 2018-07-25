@@ -3,9 +3,7 @@
 
 <suite thread-count="1" verbose="1" name="Ruinart Suite" annotations="JDK" parallel="tests">
     <listeners>
-
         <listener class-name="com.adyax.ruinart.automation.Listener"></listener>
-
     </listeners>
 
     <test name="Test_1">

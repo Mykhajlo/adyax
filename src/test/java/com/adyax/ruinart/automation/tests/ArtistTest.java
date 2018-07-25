@@ -1,5 +1,6 @@
 package com.adyax.ruinart.automation.tests;
 
+import com.adyax.ruinart.automation.MainTest;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -19,9 +20,9 @@ import static com.adyax.ruinart.automation.Utils.setupEnvironment;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ArtistTest {
+public class ArtistTest extends MainTest {
     private static final Logger LOGGER = Logger.getLogger(ArtistTest.class);
-    public static WebDriver driver;
+    //public static WebDriver driver;
 
     @BeforeClass
     public void setUp() throws InterruptedException {

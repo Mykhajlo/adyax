@@ -1,6 +1,7 @@
 package com.adyax.ruinart.automation.tests;
 
 
+import com.adyax.ruinart.automation.MainTest;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -20,9 +21,9 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 /**
  * @author mihail mykhail
  */
-public class FranceLoginTest {
+public class FranceLoginTest extends MainTest {
     private static final Logger LOGGER = Logger.getLogger(FranceLoginTest.class);
-    public static WebDriver driver;
+    //public static WebDriver driver;
     @BeforeClass
     public void setUp() throws InterruptedException {
         driver = setupEnvironment();

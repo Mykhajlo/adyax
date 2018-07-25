@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81224a46-4f26-4321-9ae5-726ea20027f3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/GetScreenshots.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Listener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/MainTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/chromedriver_linux64" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_api_1_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_jackson_1_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_pojo_1_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_descriptions_javadoc_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tika_tika_core_1_14.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jooq_joor_java_8_0_9_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_9_8.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/LesGestesPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/LesGestesPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/ruinart_tests.iml" afterPath="$PROJECT_DIR$/ruinart_tests.iml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,32 +45,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ruinart_tests$FirstTest.coverage" NAME="FirstTest Coverage Results" MODIFIED="1532501988306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.adyax.ruinart.automation.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ruinart_tests" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArtistPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ArtistPage.java">
+      <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="119" column="64" lean-forward="false" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="64" />
+            <state relative-caret-position="731">
+              <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#checkArtistNameDetail#0;class#ArtistPage#0" expanded="false" />
-                <element signature="method#clickBottomArrowArtistPage#0;class#ArtistPage#0" expanded="false" />
-                <element signature="method#clickUpButtonArtistPage#0;class#ArtistPage#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FranceLoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="81" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -56,11 +70,12 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="241">
               <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setupEnvironment#0;class#Utils#0" expanded="false" />
+                <element signature="method#openAgeGate#0;class#Utils#0" expanded="false" />
                 <element signature="method#loginFranceHomePage#0;class#Utils#0" expanded="false" />
                 <element signature="method#openHomePageAnonymous#0;class#Utils#0" expanded="false" />
                 <element signature="method#getURL#0;class#Utils#0" expanded="false" />
@@ -72,74 +87,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetScreenshots.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/GetScreenshots.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="159" lean-forward="false" selection-start-line="20" selection-start-column="159" selection-end-line="20" selection-end-column="159" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2465">
-              <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#returnToHomepage#0;class#HomePage#0" expanded="false" />
-                <element signature="method#clickBottomArrowHomePage#0;class#HomePage#0" expanded="false" />
-                <element signature="method#showWineTitle#0;class#HomePage#0" expanded="false" />
-                <element signature="method#clickDotSlider#0;class#HomePage#0" expanded="false" />
-                <element signature="method#openMenu#0;class#HomePage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Listener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailable-report.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/surefire-reports/emailable-report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-results.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/surefire-reports/testng-results.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Listener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#onStart#0;class#Listener#0" expanded="false" />
                 <element signature="method#onFinish#0;class#Listener#0" expanded="false" />
                 <element signature="method#onStart#1;class#Listener#0" expanded="false" />
@@ -152,16 +145,6 @@
                 <element signature="method#afterInvocation#0;class#Listener#0" expanded="false" />
                 <element signature="method#returnMethodName#0;class#Listener#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="46" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -208,32 +191,32 @@
         <option value="$PROJECT_DIR$/src/test/resources/Links" />
         <option value="$PROJECT_DIR$/src/test/resources/config1" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/BirthDate.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/AgeGatePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/LeSavoirFairePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/CrayersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HistoryPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/CrayeresPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ProductPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ArtistPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/LesGestesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MainTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/MainTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Listener.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/GetScreenshots.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -288,10 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,18 +310,34 @@
               <item name="ruinart_tests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruinart_tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ruinart_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruinart_tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -442,34 +438,34 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FirstTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.adyax.ruinart.automation.tests.*" />
+          <option name="PATTERN" value="com.adyax.ruinart.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ruinart_tests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.adyax.ruinart.automation.tests" />
       <option name="MAIN_CLASS_NAME" value="com.adyax.ruinart.automation.tests.FirstTest" />
       <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
@@ -490,102 +486,6 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FirstTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.adyax.ruinart.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ruinart_tests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.adyax.ruinart.automation.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.adyax.ruinart.automation.tests.FirstTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FirstTest.FirstTestStart (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.adyax.ruinart.automation.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ruinart_tests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.adyax.ruinart.automation.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.adyax.ruinart.automation.tests.FirstTest" />
-      <option name="METHOD_NAME" value="FirstTestStart" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FirstTest.FirstTestStart" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.adyax.ruinart.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ruinart_tests" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.adyax.ruinart.automation.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.adyax.ruinart.automation.tests.FirstTest" />
-      <option name="METHOD_NAME" value="FirstTestStart" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -635,20 +535,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="TestNG.FirstTest" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.FirstTest (1)" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.FirstTest.FirstTestStart" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.FirstTest.FirstTestStart (1)" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.FirstTest.FirstTestStart (1)" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.FirstTest (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.FirstTest.FirstTestStart" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.FirstTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.FirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -690,7 +584,8 @@
       <workItem from="1531979484322" duration="17659000" />
       <workItem from="1532070864337" duration="22312000" />
       <workItem from="1532333328767" duration="3702000" />
-      <workItem from="1532415538394" duration="22598000" />
+      <workItem from="1532415538394" duration="22652000" />
+      <workItem from="1532499125479" duration="11269000" />
     </task>
     <task id="LOCAL-00001" summary="[001] - adding pages templates">
       <created>1522158442558</created>
@@ -832,33 +727,40 @@
       <option name="project" value="LOCAL" />
       <updated>1532094726080</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[005] - added LesGestesTest and other 20-07-2018">
+      <created>1532440691913</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1532440691913</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 17m 31s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 09h 20m 59s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 18m 19s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 09h 59m 19s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 38m 38s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 10h 07m 08s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 39m 48s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 10h 08m 30s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 40m 25s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 10h 24m 38s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 48m 53s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 10h 29m 17s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 50m 13s.xml">
+    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.25 at 10h 30m 30s.xml">
       <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_adyax-021_IdeaProjects_ruinart_tests_src_test_resources_testng_xml - 2018.07.24 at 16h 50m 57s.xml">
-      <configuration name="C:/Users/adyax-021/IdeaProjects/ruinart_tests/src/test/resources/testng.xml" configurationId="TestNG" />
+    <history-entry file="FirstTest - 2018.07.25 at 10h 00m 00s.xml">
+      <configuration name="FirstTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="FirstTest_(1) - 2018.07.24 at 16h 38m 06s.xml">
       <configuration name="FirstTest (1)" configurationId="TestNG" />
@@ -868,7 +770,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241517000" />
+    <option name="totallyTimeSpent" value="252840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -890,15 +792,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.5079957" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09594883" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13539445" sideWeight="0.49285713" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19891304" sideWeight="0.49402985" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.49200428" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39130434" sideWeight="0.49200428" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34168443" sideWeight="0.50714284" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24021739" sideWeight="0.59850746" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.49438202" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.49438202" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -910,6 +812,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -993,14 +896,6 @@
           </properties>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java</url>
-          <line>62</line>
-          <properties class="com.adyax.ruinart.automation.Utils" method="openAgeGate">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="34" />
     </breakpoint-manager>
@@ -1011,81 +906,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ArtistLandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setupEnvironment#0;class#Utils#0" expanded="false" />
-            <element signature="method#loginFranceHomePage#0;class#Utils#0" expanded="false" />
-            <element signature="method#openHomePageAnonymous#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURL#0;class#Utils#0" expanded="false" />
-            <element signature="method#scrollToElement#0;class#Utils#0" expanded="false" />
-            <element signature="method#acceptCookiesBanner#0;class#Utils#0" expanded="false" />
-            <element signature="method#httpAuth#0;class#Utils#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ReceptionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/DomRuinartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/CrayeresPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ArtFairsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1242,38 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/LeSavoirFairePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1284,19 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ruinart_tests.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="14" column="100" lean-forward="true" selection-start-line="14" selection-start-column="100" selection-end-line="14" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,48 +1091,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/ArtistPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
+        <state relative-caret-position="0">
           <caret line="119" column="64" lean-forward="false" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#checkArtistNameDetail#0;class#ArtistPage#0" expanded="false" />
             <element signature="method#clickBottomArrowArtistPage#0;class#ArtistPage#0" expanded="false" />
             <element signature="method#clickUpButtonArtistPage#0;class#ArtistPage#0" expanded="false" />
@@ -1361,12 +1111,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Listener.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="2465">
+          <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#returnToHomepage#0;class#HomePage#0" expanded="false" />
+            <element signature="method#clickBottomArrowHomePage#0;class#HomePage#0" expanded="false" />
+            <element signature="method#showWineTitle#0;class#HomePage#0" expanded="false" />
+            <element signature="method#clickDotSlider#0;class#HomePage#0" expanded="false" />
+            <element signature="method#openMenu#0;class#HomePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/GetScreenshots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="159" lean-forward="false" selection-start-line="20" selection-start-column="159" selection-end-line="20" selection-end-column="159" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ArtistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/MaisonRuinartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesGestesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LesCrayeresTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/LeSavoirFaireTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/HomePageBottleSliderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setupEnvironment#0;class#Utils#0" expanded="false" />
+            <element signature="method#openAgeGate#0;class#Utils#0" expanded="false" />
+            <element signature="method#loginFranceHomePage#0;class#Utils#0" expanded="false" />
+            <element signature="method#openHomePageAnonymous#0;class#Utils#0" expanded="false" />
+            <element signature="method#getURL#0;class#Utils#0" expanded="false" />
+            <element signature="method#scrollToElement#0;class#Utils#0" expanded="false" />
+            <element signature="method#acceptCookiesBanner#0;class#Utils#0" expanded="false" />
+            <element signature="method#httpAuth#0;class#Utils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T10-43-46_742-jvmRun1.dumpstream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T10-43-47_940.dumpstream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T10-46-17_806-jvmRun1.dumpstream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T10-46-19_165.dumpstream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T10-55-30_849-jvmRun1.dump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T11-00-10_257-jvmRun1.dump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-07-25T11-09-09_974-jvmRun1.dump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/emailable-report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/testng-results.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="46" />
+          <folding>
             <element signature="method#onStart#0;class#Listener#0" expanded="false" />
             <element signature="method#onFinish#0;class#Listener#0" expanded="false" />
             <element signature="method#onStart#1;class#Listener#0" expanded="false" />
@@ -1379,82 +1341,6 @@
             <element signature="method#afterInvocation#0;class#Listener#0" expanded="false" />
             <element signature="method#returnMethodName#0;class#Listener#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="201" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#returnToHomepage#0;class#HomePage#0" expanded="false" />
-            <element signature="method#clickBottomArrowHomePage#0;class#HomePage#0" expanded="false" />
-            <element signature="method#showWineTitle#0;class#HomePage#0" expanded="false" />
-            <element signature="method#clickDotSlider#0;class#HomePage#0" expanded="false" />
-            <element signature="method#openMenu#0;class#HomePage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FranceLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setupEnvironment#0;class#Utils#0" expanded="false" />
-            <element signature="method#loginFranceHomePage#0;class#Utils#0" expanded="false" />
-            <element signature="method#openHomePageAnonymous#0;class#Utils#0" expanded="false" />
-            <element signature="method#getURL#0;class#Utils#0" expanded="false" />
-            <element signature="method#scrollToElement#0;class#Utils#0" expanded="false" />
-            <element signature="method#acceptCookiesBanner#0;class#Utils#0" expanded="false" />
-            <element signature="method#httpAuth#0;class#Utils#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/tests/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/adyax/ruinart/automation/GetScreenshots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="159" lean-forward="false" selection-start-line="20" selection-start-column="159" selection-end-line="20" selection-end-column="159" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
