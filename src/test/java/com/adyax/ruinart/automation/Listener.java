@@ -65,7 +65,7 @@ public class Listener implements ITestListener  {
     public void onTestFailure(ITestResult arg0) {
 
         // This is calling the printTestResults method
-        LOGGER.info("Test is FFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
+        LOGGER.info("Test is Failed");
         try {
             GetScreenshots.failed(arg0.getName());
         } catch (IOException e) {

@@ -16,7 +16,7 @@ public class HomePage {
     public static final By ruinart_logo_arms = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[1]/span[1]/svg");
     public static final By ruinart_logo_name = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[1]/span[2]/svg");
     public static final By ruinart_logo_text = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[1]/span[3]/svg");
-    public static final By newsletter_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/header/a[2]/span/span/svg");
+    public static final By newsletter_button = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/header/a[2]");
     public static final By menu_button = By.xpath("//span[@class='svg-icon']");
     public static final By menu_block = By.xpath("//div[@class='menu-block']");
     public static  By menu_item_1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[2]/div[1]/div[1]/div/ul/li[1]/a");
@@ -202,6 +202,18 @@ public class HomePage {
         driver.findElement(menu_item_2).click();// Click "Dot"
         wait.until(ExpectedConditions.attributeContains(element, "class","page-loaded"));
         LOGGER.info("Page is opened");
+    }
+    public static void openNewsletterPage(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_moving, "class","active")));
+        //wait.until(ExpectedConditions.elementToBeClickable(newsletter_button));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(newsletter_button));
+        wait.until(ExpectedConditions.attributeContains(newsletter_button, "class","icon-newsletter no-smoothState"));
+        driver.findElement(newsletter_button).click();
+        LOGGER.info("Newsletter page is opened");
     }
 
 }

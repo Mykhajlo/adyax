@@ -1,7 +1,6 @@
 package com.adyax.ruinart.automation.tests;
 
 import com.adyax.ruinart.automation.MainTest;
-import jdk.jfr.Description;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,7 +40,7 @@ public class FirstTest extends MainTest{
         driver.quit();
     }
     @Test(priority = 0, description = "First initial test for app")
-    @Description("Test Description: Login test")
+    //@Description("Test Description: Login test")
     public void FirstTestStart () throws Exception{
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
