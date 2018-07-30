@@ -27,15 +27,17 @@ public class NewsletterPage {
     public static final By year = By.xpath("//*[@id=\"edit-birth-date\"]/div[3]/span");
 
     public static final By gdpr = By.xpath("//*[@id=\"edit-gdpr--wrapper\"]/div[2]/span");
-    public static final By gdpr_email_checkbox = By.xpath("//*[@id=\"edit-gdpr-gdpr-use-email\"]");
-    public static final By gdpr_sms_checkbox = By.xpath("//*[@id=\"edit-gdpr-gdpr-use-sms\"]");
-    public static final By gdpr_sms_field = By.xpath("//*[@id=\"edit-gdpr\"]/div[2]");
+   // public static final By gdpr_email_checkbox = By.xpath("//div[@class='form-item-gdpr-gdpr-use-email']");
+    public static final By gdpr_email_checkbox = By.xpath("//div[contains(@class, 'form-item-gdpr-gdpr-use-email')]");
 
-    public static final By gdpr_phone_checkbox = By.xpath("//*[@id=\"edit-gdpr-gdpr-use-phone\"]");
-    public static final By gdpr_phone_field = By.xpath("//*[@id=\"edit-gdpr\"]/div[2]");
+    public static final By gdpr_sms_checkbox = By.xpath("//div[contains(@class, 'form-item-gdpr-gdpr-use-sms js-form-item-gdpr-gdpr-use-sms')]");
+    public static final By gdpr_sms_field = By.xpath("//*[@id=\"edit-gdpr-gdpr-sms-phone-number\"]");
 
-    public static final By gdpr_address_checkbox = By.xpath("//*[@id=\"edit-gdpr\"]/div[1]/span");
-    public static final By gdpr_address_field = By.xpath("//*[@id=\"edit-gdpr\"]/div[2]");
+    public static final By gdpr_phone_checkbox = By.xpath("//div[contains(@class, 'form-item-gdpr-gdpr-use-phone')]");
+    public static final By gdpr_phone_field = By.xpath("//*[@id=\"edit-gdpr-gdpr-phone-number\"]");
+
+    public static final By gdpr_address_checkbox = By.xpath("//div[contains(@class, 'form-item-gdpr-gdpr-use-postal')]");
+    public static final By gdpr_address_field = By.xpath("//*[@id=\"edit-gdpr-gdpr-loaction-autocomplete\"]");
 
     public static final By affiliates_link = By.xpath("//*[@id=\"edit-gdpr-gdpr-agreement--description\"]/a[1]");
     public static final By affiliates_cross = By.xpath("/html/body/div[7]/div[1]/button");
@@ -85,20 +87,14 @@ public class NewsletterPage {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-        //wait.until(ExpectedConditions.elementToBeClickable(test));
+
         wait.until(ExpectedConditions.elementToBeClickable(user_location));// Location dropdown is clickable
-        // Create instance of Javascript executor
-       // JavascriptExecutor je = (JavascriptExecutor) driver;
         LOGGER.info("Location dropdown is readysdsdsdsds");
         clickLocation(driver);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(location_name));
         WebElement element = driver.findElement(test_location);
-       // je.executeScript("arguments[0].scrollIntoView(true);",element); // now execute query which actually will scroll until that element is not appeared on page.
-       // Thread.sleep(2000);
+
         Actions builder = new Actions(driver);
         builder.moveToElement(element).build().perform();
-        //wait.until(ExpectedConditions.attributeContains(element, "class","jcf-option jcf-hover"));
-        //wait.until(ExpectedConditions.elementToBeClickable(element));// Element is selected at dropdown
         LOGGER.info("Location : " + element.getText());
         builder.click().perform();
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(user_location, "class","jcf-drop-active")));
@@ -123,5 +119,114 @@ public class NewsletterPage {
         driver.findElement(send_button).click();// Click "Location"
         LOGGER.info("Button is clicked");
         wait.until(ExpectedConditions.visibilityOfElementLocated(thanks_message_title));
+    }
+    public static void openAfiliates(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(affiliates_link));
+        driver.findElement(affiliates_link).click();// Click ""
+        LOGGER.info("Afiliates list is opened");
+    }
+    public static void closeAafiliates (WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(affiliates_cross));
+        driver.findElement(affiliates_cross).click();// Click ""
+        LOGGER.info("Afiliates list is closed");
+    }
+    public static void clickGDPR(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr));
+        driver.findElement(gdpr).click();// Click ""
+    }
+    public static void clickEmailCheckbox(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_email_checkbox));
+        driver.findElement(gdpr_email_checkbox).click();// Click ""
+        LOGGER.info("Email checkbox is clicked");
+    }
+    public static void clickSMSCheckbox(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_sms_checkbox));
+        driver.findElement(gdpr_sms_checkbox).click();// Click ""
+        LOGGER.info("SMS checkbox is clicked");
+    }
+    public static void clickPhoneCheckbox(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_phone_checkbox));
+        driver.findElement(gdpr_phone_checkbox).click();// Click ""
+        LOGGER.info("Phone checkbox is clicked");
+    }
+    public static void clickAddressCheckbox(WebDriver driver){
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_address_checkbox));
+        driver.findElement(gdpr_address_checkbox).click();// Click ""
+        LOGGER.info("Address checkbox is clicked");
+    }
+    public  static void fillSMS(WebDriver driver, Integer index) throws InterruptedException {
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        index = 5 + (int)(Math.random() * ((100 - 5) + 1));
+       // wait.until(ExpectedConditions.attributeContains(gdpr_sms_field, "id","jcf-checked"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_sms_field));
+        if(driver.findElement(gdpr_sms_field).isDisplayed()){
+            driver.findElement(gdpr_sms_field).clear();
+            driver.findElement(gdpr_sms_field).sendKeys("937-" + index + "-92");
+            LOGGER.info("SMS field is filled");
+        }else {
+            LOGGER.info("SMS field is not available!!");
+        }
+    }
+    public  static void fillPhone(WebDriver driver, Integer index) throws InterruptedException {
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        index = 5 + (int)(Math.random() * ((100 - 5) + 1));
+         wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_phone_field));
+        if(driver.findElement(gdpr_phone_field).isDisplayed()){
+            driver.findElement(gdpr_phone_field).clear();
+            driver.findElement(gdpr_phone_field).sendKeys("937-" + index + "-92");
+            LOGGER.info("Phone field is filled");
+        } else {
+            LOGGER.info("Phone field is not available!!");
+        }
+    }
+    public  static void fillAddress(WebDriver driver, Integer index) throws InterruptedException {
+        FluentWait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(30, SECONDS)
+                .pollingEvery(500, MILLISECONDS)
+                .ignoring(NoSuchElementException.class);
+        index = 5 + (int)(Math.random() * ((99 - 5) + 1));
+        // wait.until(ExpectedConditions.attributeContains(gdpr_sms_field, "id","jcf-checked"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(gdpr_address_field));
+        if(driver.findElement(gdpr_address_field).isDisplayed()){
+            driver.findElement(gdpr_address_field).clear();
+            driver.findElement(gdpr_address_field).sendKeys( index + " East Avenue, Pitman, NJ, USA"  );
+            LOGGER.info("Address field is filled");
+        } else {
+            LOGGER.info("Address field is not available!!");
+        }
     }
 }

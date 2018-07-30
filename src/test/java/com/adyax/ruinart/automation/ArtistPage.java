@@ -62,7 +62,6 @@ public class ArtistPage {
         String artist_detail = driver.findElement(artist_Detail).getText();
         LOGGER.info("Artist name = " + artist_name);
         LOGGER.info("Artist info = " + artist_detail);
-
     }
 
     public  static void clickBottomArrowArtistPage(WebDriver driver, Integer slide) throws InterruptedException {
