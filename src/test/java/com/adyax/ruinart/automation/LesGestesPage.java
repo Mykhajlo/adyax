@@ -72,8 +72,8 @@ public class LesGestesPage {
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
                 .ignoring(NoSuchElementException.class);
-        page_moving = By.xpath(page_moving_part_0 + slide + page_moving_part_1);
-        wait.until(ExpectedConditions.attributeContains(page_moving, "class","active fp-completely"));
+       // page_moving = By.xpath(page_moving_part_0 + slide + page_moving_part_1);
+       // wait.until(ExpectedConditions.attributeContains(page_moving, "class","active fp-completely"));
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load, "class","loading")));
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(page_load_content, "class","anim-start")));
         bottom_arrow = By.xpath(bottom_arrow_part_0 + slide  + bottom_arrow_part_1);

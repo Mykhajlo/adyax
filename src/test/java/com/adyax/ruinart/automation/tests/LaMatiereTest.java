@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static com.adyax.ruinart.automation.HomePage.*;
-import static com.adyax.ruinart.automation.LesGestesPage.loadLesGestesPage;
+import static com.adyax.ruinart.automation.LaMatierePage.*;
 import static com.adyax.ruinart.automation.Utils.loginFranceHomePage;
 import static com.adyax.ruinart.automation.Utils.setupEnvironment;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
@@ -38,7 +38,7 @@ public class LaMatiereTest extends MainTest {
         driver.quit();
     }
     @Test
-    public void LesGestesPageTest () throws Exception {
+    public void LaMatierePageTest () throws Exception {
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)
@@ -52,6 +52,20 @@ public class LaMatiereTest extends MainTest {
         openMenu(driver);
         Assert.assertTrue(menu_block.findElement(driver).isEnabled());
         LOGGER.info("Menu is present");
-        openMenuPage(driver, 2, 1, loadLesGestesPage);
+        openMenuPage(driver, 2, 1, loadLaMatierePage);
+        checkLaMatiereDetail(driver, slide);
+        scrollToSomeElement(driver,slide, block_title_0);
+        slide = slide+1;
+        clickRightArrowLaMatiere (driver, slide, index);
+        //Thread.sleep(5000);
+        scrollToSomeElement(driver, slide, block_title_1);
+        slide = slide+1;
+        scrollToSomeElement(driver, slide, block_title_2);
+        slide = slide+1;
+        scrollToSomeElement(driver, slide, footer_text);
+        slide = slide+1;
+        scrollToSomeElement(driver, slide, block_title_1);
+        //Thread.sleep(5000);
+        LOGGER.info("Test is finished");
     }
 }

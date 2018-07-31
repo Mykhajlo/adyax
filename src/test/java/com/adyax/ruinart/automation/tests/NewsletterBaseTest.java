@@ -65,7 +65,7 @@ public class NewsletterBaseTest extends MainTest {
         fillPhone(driver, index);
         fillAddress(driver, index);
         //Thread.sleep(5000);
-       // clickSend(driver);
+        clickSend(driver);
        // Thread.sleep(5000);
     }
 }

@@ -28,7 +28,6 @@ public class BirthDate implements Comparable<BirthDate> {
         this.index = index;
     }
 
-
     public Integer getYearValue() {
         return yearValue;
     }
@@ -36,7 +35,6 @@ public class BirthDate implements Comparable<BirthDate> {
     public void setYearValue(Integer amountResponse) {
         this.yearValue = amountResponse;
     }
-
 
     public WebElement getYearElement() {
         return yearElement;

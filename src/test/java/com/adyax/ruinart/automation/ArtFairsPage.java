@@ -14,9 +14,11 @@ public class ArtFairsPage {
     public static final By artfair_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/h1");
     public static final By artfair_subtitle = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/h2");
     public static final By artfair_text = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]/div/div/p");
+
     public static final By artfair_block_title = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[3]/div/div[1]/div/div[1]/h2");
     public static final By artfair_block_title_1 = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[3]/div/div[1]/div/div[6]/h2");
     public static final By footer_text = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[4]/div/div[1]/footer/div/h2");
+
     public static  By page_moving = By.xpath("//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[2]");
     public static final String page_moving_part_0 = "//*[@id=\"ajax-redirect\"]/div/div/div[1]/div[";
     public static final String page_moving_part_1 = "]";
