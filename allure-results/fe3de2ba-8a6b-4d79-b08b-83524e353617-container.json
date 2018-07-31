@@ -1,0 +1,1 @@
+{"uuid":"fe3de2ba-8a6b-4d79-b08b-83524e353617","name":"com.adyax.ruinart.automation.tests.NewsletterBaseTest.openPage","description":"","start":1532681726849,"stop":1532681729981,"children":["e91bf7ae-57a2-405e-9d70-13d32e53b5f9"],"befores":[{"name":"openPage","status":"passed","stage":"finished","description":"","start":1532681726849,"stop":1532681729980}]}

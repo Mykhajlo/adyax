@@ -1,0 +1,1 @@
+{"uuid":"64aaf858-7428-4698-8d04-574a8542e742","name":"com.adyax.ruinart.automation.tests.LeSavoirFaireTest.openPage","description":"","start":1532956127433,"stop":1532956132555,"children":["d628b737-40a3-4bb5-9655-7833bbec07bb"],"befores":[{"name":"openPage","status":"passed","stage":"finished","description":"","start":1532956127433,"stop":1532956132554}]}
