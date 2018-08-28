@@ -18,9 +18,7 @@ public class  GetScreenshots extends  MainTest {
         LOGGER.info("Test is gogogogogog = " + driver);
         File scrFile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         String timeStamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-        String scrName = "C:\\Users\\adyax-021\\IdeaProjects\\ruinart_tests\\src\\test\\screenshots\\" + driver.getTitle()+ "_" + screenshotName + "_" + timeStamp +".png";
-        //String scrName = System.getProperty("user.dir") + driver.getTitle()+ "_" + screenshotName + "_" + timeStamp +".png";
-
+        String scrName = "src\\test\\screenshots\\" + driver.getTitle()+ "_" + screenshotName + "_" + timeStamp +".png";
         File destination = new File(scrName);
         //File destination = new File (scrName);
         try {
