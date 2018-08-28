@@ -32,7 +32,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class Utils {
     private static final Logger LOGGER = Logger.getLogger(Utils.class);
     public static WebDriver driver;
-    public static ChromeDriver setupEnvironment() {
+    public static ChromeDriver setupEnvironment() throws InterruptedException {
         //System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver.dmg");
         String osName = System.getProperty("os.name").toLowerCase();
         if (osName.contains("win")) {

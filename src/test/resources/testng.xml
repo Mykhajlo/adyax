@@ -16,5 +16,10 @@
             <class name="com.adyax.ruinart.automation.tests.NewsletterBaseTest"/>
         </classes>
     </test>
+    <test name="Test_3">
+        <classes>
+            <class name="com.adyax.ruinart.automation.tests.FirstTest"/>
+        </classes>
+    </test>
 
 </suite>

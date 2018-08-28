@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
+import java.io.IOException;
+
 import static java.sql.DriverManager.getDriver;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
@@ -89,7 +91,7 @@ public class NewsletterPage {
                 .ignoring(NoSuchElementException.class);
 
         wait.until(ExpectedConditions.elementToBeClickable(user_location));// Location dropdown is clickable
-        LOGGER.info("Location dropdown is readysdsdsdsds");
+        LOGGER.info("Location dropdown is ready!");
         clickLocation(driver);
         WebElement element = driver.findElement(test_location);
 
@@ -109,7 +111,7 @@ public class NewsletterPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(user_location));
         driver.findElement(user_location).click();// Click "Location"
     }
-    public static void clickSend (WebDriver driver) {
+    public static void clickSend (WebDriver driver) throws InterruptedException {
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(30, SECONDS)
                 .pollingEvery(500, MILLISECONDS)

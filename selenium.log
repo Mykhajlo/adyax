@@ -17507,3 +17507,435 @@ LES FOIRES D'ART
 2018-07-31 15:30:35 INFO  NewsletterPage:120 - Button is clicked
 2018-07-31 15:31:06 INFO  Listener:68 - Test is Failed
 2018-07-31 15:31:06 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (cc0d28d078dabb98cfaf766950f265cc)
+2018-08-01 11:56:12 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-01 11:56:29 INFO  Utils:93 - Test
+2018-08-01 11:56:29 INFO  Utils:159 - Cookies banner is accepted
+2018-08-01 11:56:31 INFO  Utils:98 - Location field is present
+2018-08-01 11:56:31 INFO  Utils:100 - DateBirth field is present
+2018-08-01 11:56:31 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-01 11:56:31 INFO  AgeGatePage:150 - Year : 1971
+2018-08-01 11:56:31 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-01 11:56:32 INFO  LaMatiereTest:51 - Header is present
+2018-08-01 11:56:32 INFO  HomePage:174 - Menu is opened
+2018-08-01 11:56:32 INFO  LaMatiereTest:54 - Menu is present
+2018-08-01 11:56:33 INFO  HomePage:204 - Page is opened
+2018-08-01 11:56:37 INFO  LaMatierePage:57 - LaMatiere title = LE SAVOIR FAIRE
+2018-08-01 11:56:37 INFO  LaMatierePage:58 - LaMatiere subtitle = LA MATIERE NOBLE
+2018-08-01 11:56:37 INFO  LaMatierePage:59 - LaMatiere text : Parmi les sept cépages autorisés par l’Appellation d’Origine Contrôlée Champagne, le Chardonnay dénote par sa complexité. Son élégance et sa fraîcheur aromatique en font le cépage emblématique de la Maison Ruinart.
+2018-08-01 11:56:37 INFO  LaMatierePage:73 - Block title = LE CHARDONNAY
+2018-08-01 11:56:37 INFO  LaMatierePage:83 - TT---> slide-block only-img slick-slide slick-current slick-active
+2018-08-01 11:56:37 INFO  LaMatierePage:87 - Right arrow button is clicked .
+2018-08-01 11:56:37 INFO  LaMatierePage:73 - Block title = UNE VITICULTURE DURABLE
+2018-08-01 11:56:37 INFO  LaMatierePage:73 - Block title = LES VENDANGES
+2018-08-01 11:56:37 INFO  LaMatierePage:73 - Block title = SUIVEZ NOUS
+2018-08-01 11:56:37 INFO  LaMatierePage:73 - Block title = UNE VITICULTURE DURABLE
+2018-08-01 11:56:37 INFO  LaMatiereTest:69 - Test is finished
+2018-08-01 15:11:35 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-01 15:11:38 INFO  Utils:71 - Test
+2018-08-01 15:11:39 INFO  Utils:74 - Location field is present
+2018-08-01 15:11:39 INFO  Utils:76 - DateBirth field is present
+2018-08-01 15:11:39 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-01 15:11:39 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-01 15:11:39 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-01 15:11:39 INFO  AgeGatePage:150 - Year : 1971
+2018-08-01 15:11:50 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-01 15:11:51 INFO  Listener:80 - The execution of the main test starts now
+2018-08-01 15:11:51 INFO  FirstTest:52 - Test is finished
+2018-08-01 15:11:55 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-01 15:11:56 INFO  Utils:93 - Test
+2018-08-01 15:11:56 INFO  Utils:159 - Cookies banner is accepted
+2018-08-01 15:11:57 INFO  Utils:98 - Location field is present
+2018-08-01 15:11:57 INFO  Utils:100 - DateBirth field is present
+2018-08-01 15:11:57 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-01 15:11:57 INFO  AgeGatePage:150 - Year : 1971
+2018-08-01 15:11:57 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-01 15:11:57 INFO  Listener:80 - The execution of the main test starts now
+2018-08-01 15:11:57 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-01 15:12:02 INFO  HomePage:216 - Newsletter page is opened
+2018-08-01 15:12:03 INFO  NewsletterPage:56 - Email : 
+2018-08-01 15:12:03 INFO  NewsletterPage:69 - User Name is filled
+2018-08-01 15:12:03 INFO  NewsletterPage:82 - User Name is filled
+2018-08-01 15:12:03 INFO  NewsletterPage:92 - Location dropdown is readysdsdsdsds
+2018-08-01 15:12:03 INFO  NewsletterPage:98 - Location : Gibraltar
+2018-08-01 15:12:04 INFO  NewsletterPage:130 - Afiliates list is opened
+2018-08-01 15:12:05 INFO  NewsletterPage:139 - Afiliates list is closed
+2018-08-01 15:12:05 INFO  NewsletterPage:156 - Email checkbox is clicked
+2018-08-01 15:12:05 INFO  NewsletterPage:165 - SMS checkbox is clicked
+2018-08-01 15:12:05 INFO  NewsletterPage:196 - SMS field is filled
+2018-08-01 15:12:05 INFO  NewsletterPage:183 - Address checkbox is clicked
+2018-08-01 15:12:05 INFO  NewsletterPage:174 - Phone checkbox is clicked
+2018-08-01 15:12:06 INFO  NewsletterPage:211 - Phone field is filled
+2018-08-01 15:12:06 INFO  NewsletterPage:227 - Address field is filled
+2018-08-01 15:12:06 INFO  NewsletterPage:120 - Button is clicked
+2018-08-01 15:12:36 INFO  Listener:68 - Test is Failed
+2018-08-01 15:12:36 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (164d84864cde0db737a6cd2a3a2412e0)
+2018-08-01 15:12:41 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-01 15:12:43 INFO  Utils:71 - Test
+2018-08-01 15:12:43 INFO  Utils:74 - Location field is present
+2018-08-01 15:12:43 INFO  Utils:76 - DateBirth field is present
+2018-08-01 15:12:43 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-01 15:12:43 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-01 15:12:44 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-01 15:12:44 INFO  AgeGatePage:150 - Year : 1971
+2018-08-01 15:12:46 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-01 15:12:46 INFO  Listener:80 - The execution of the main test starts now
+2018-08-01 15:12:46 INFO  FirstTest:52 - Test is finished
+2018-08-02 16:31:29 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-02 16:31:33 INFO  Utils:93 - Test
+2018-08-02 16:31:34 INFO  Utils:159 - Cookies banner is accepted
+2018-08-02 16:31:34 INFO  Utils:98 - Location field is present
+2018-08-02 16:31:34 INFO  Utils:100 - DateBirth field is present
+2018-08-02 16:31:34 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-02 16:31:34 INFO  AgeGatePage:150 - Year : 1971
+2018-08-02 16:31:34 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-02 16:31:34 INFO  LesGestesTest:52 - Header is present
+2018-08-02 16:31:35 INFO  HomePage:174 - Menu is opened
+2018-08-02 16:31:35 INFO  LesGestesTest:55 - Menu is present
+2018-08-02 16:31:36 INFO  HomePage:204 - Page is opened
+2018-08-02 16:31:38 INFO  LesGestesPage:67 - LesGestes title = LE SAVOIR FAIRE
+2018-08-02 16:31:38 INFO  LesGestesPage:68 - LesGestes info = Des gestes précis qui portent en eux l’Histoire de la Maison Ruinart et révèlent en filigrane l’essence de son savoir-faire d’exception.
+2018-08-02 16:31:39 INFO  LesGestesPage:83 - Bottom button is clicked!!
+2018-08-02 16:31:39 INFO  LesGestesPage:96 - TT---> slide-block only-img slick-slide slick-current slick-active
+2018-08-02 16:31:39 INFO  LesGestesPage:100 - Right arrow button is clicked.
+2018-08-02 16:31:39 INFO  LesGestesPage:114 - OOO = By.xpath: //*[@id="ajax-redirect"]/div/div/div[1]/div[2]/div/div/div/ul/div/div/li[2]
+2018-08-02 16:31:39 INFO  LesGestesPage:115 - UU---> slide-block center-text slick-slide slick-current slick-active
+2018-08-02 16:31:40 INFO  LesGestesPage:119 - Left arrow button is clicked.
+2018-08-14 08:53:30 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-14 08:53:54 INFO  Utils:93 - Test
+2018-08-14 08:53:54 INFO  Utils:159 - Cookies banner is accepted
+2018-08-14 08:53:58 INFO  Utils:98 - Location field is present
+2018-08-14 08:53:58 INFO  Utils:100 - DateBirth field is present
+2018-08-14 08:53:58 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-14 08:53:58 INFO  AgeGatePage:150 - Year : 1971
+2018-08-14 08:53:58 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-14 08:53:58 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-14 08:54:03 INFO  HomePage:216 - Newsletter page is opened
+2018-08-14 08:54:03 INFO  NewsletterPage:56 - Email : 
+2018-08-14 08:54:04 INFO  NewsletterPage:69 - User Name is filled
+2018-08-14 08:54:04 INFO  NewsletterPage:82 - User Name is filled
+2018-08-14 08:54:04 INFO  NewsletterPage:92 - Location dropdown is readysdsdsdsds
+2018-08-14 08:54:04 INFO  NewsletterPage:98 - Location : Gibraltar
+2018-08-14 08:54:04 INFO  NewsletterPage:130 - Afiliates list is opened
+2018-08-14 08:54:05 INFO  NewsletterPage:139 - Afiliates list is closed
+2018-08-14 08:54:06 INFO  NewsletterPage:156 - Email checkbox is clicked
+2018-08-14 08:54:06 INFO  NewsletterPage:165 - SMS checkbox is clicked
+2018-08-14 08:54:06 INFO  NewsletterPage:196 - SMS field is filled
+2018-08-14 08:54:06 INFO  NewsletterPage:183 - Address checkbox is clicked
+2018-08-14 08:54:06 INFO  NewsletterPage:174 - Phone checkbox is clicked
+2018-08-14 08:54:06 INFO  NewsletterPage:211 - Phone field is filled
+2018-08-14 08:54:07 INFO  NewsletterPage:227 - Address field is filled
+2018-08-14 08:54:07 INFO  NewsletterPage:120 - Button is clicked
+2018-08-28 13:37:20 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 13:38:15 INFO  Utils:93 - Test
+2018-08-28 13:39:25 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 13:39:44 INFO  Utils:93 - Test
+2018-08-28 13:39:44 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 13:39:44 INFO  Utils:98 - Location field is present
+2018-08-28 13:39:44 INFO  Utils:100 - DateBirth field is present
+2018-08-28 13:39:44 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 13:39:45 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 13:39:45 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 13:39:45 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 13:39:47 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 13:39:47 INFO  NewsletterPage:56 - Email : 
+2018-08-28 13:39:47 INFO  NewsletterPage:69 - User Name is filled
+2018-08-28 13:39:47 INFO  NewsletterPage:82 - User Name is filled
+2018-08-28 13:39:47 INFO  NewsletterPage:92 - Location dropdown is readysdsdsdsds
+2018-08-28 13:39:48 INFO  NewsletterPage:98 - Location : Gibraltar
+2018-08-28 13:39:48 INFO  NewsletterPage:130 - Afiliates list is opened
+2018-08-28 13:39:49 INFO  NewsletterPage:139 - Afiliates list is closed
+2018-08-28 13:39:49 INFO  NewsletterPage:156 - Email checkbox is clicked
+2018-08-28 13:39:49 INFO  NewsletterPage:165 - SMS checkbox is clicked
+2018-08-28 13:39:49 INFO  NewsletterPage:196 - SMS field is filled
+2018-08-28 13:39:49 INFO  NewsletterPage:183 - Address checkbox is clicked
+2018-08-28 13:39:49 INFO  NewsletterPage:174 - Phone checkbox is clicked
+2018-08-28 13:39:49 INFO  NewsletterPage:211 - Phone field is filled
+2018-08-28 13:39:50 INFO  NewsletterPage:227 - Address field is filled
+2018-08-28 13:39:50 INFO  NewsletterPage:120 - Button is clicked
+2018-08-28 13:43:56 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 13:44:18 INFO  Utils:93 - Test
+2018-08-28 13:44:19 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 13:44:19 INFO  Utils:98 - Location field is present
+2018-08-28 13:44:19 INFO  Utils:100 - DateBirth field is present
+2018-08-28 13:44:19 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 13:44:19 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 13:44:20 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 13:44:20 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 13:44:21 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 13:44:22 INFO  NewsletterPage:56 - Email : 
+2018-08-28 13:44:22 INFO  NewsletterPage:69 - User Name is filled
+2018-08-28 13:44:22 INFO  NewsletterPage:82 - User Name is filled
+2018-08-28 13:44:22 INFO  NewsletterPage:92 - Location dropdown is readysdsdsdsds
+2018-08-28 13:44:22 INFO  NewsletterPage:98 - Location : Gibraltar
+2018-08-28 13:44:23 INFO  NewsletterPage:130 - Afiliates list is opened
+2018-08-28 13:44:23 INFO  NewsletterPage:139 - Afiliates list is closed
+2018-08-28 13:44:23 INFO  NewsletterPage:156 - Email checkbox is clicked
+2018-08-28 13:44:23 INFO  NewsletterPage:165 - SMS checkbox is clicked
+2018-08-28 13:44:24 INFO  NewsletterPage:196 - SMS field is filled
+2018-08-28 13:44:24 INFO  NewsletterPage:183 - Address checkbox is clicked
+2018-08-28 13:44:24 INFO  NewsletterPage:174 - Phone checkbox is clicked
+2018-08-28 13:44:24 INFO  NewsletterPage:211 - Phone field is filled
+2018-08-28 13:44:25 INFO  NewsletterPage:227 - Address field is filled
+2018-08-28 13:44:25 INFO  NewsletterPage:120 - Button is clicked
+2018-08-28 13:47:03 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 13:47:17 INFO  Utils:93 - Test
+2018-08-28 13:47:17 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 13:47:17 INFO  Utils:98 - Location field is present
+2018-08-28 13:47:17 INFO  Utils:100 - DateBirth field is present
+2018-08-28 13:47:17 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 13:47:17 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 13:47:18 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 13:47:18 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 13:47:19 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 13:47:19 INFO  NewsletterPage:56 - Email : 
+2018-08-28 13:47:20 INFO  NewsletterPage:69 - User Name is filled
+2018-08-28 13:47:20 INFO  NewsletterPage:82 - User Name is filled
+2018-08-28 13:47:20 INFO  NewsletterPage:92 - Location dropdown is ready!
+2018-08-28 13:47:20 INFO  NewsletterPage:98 - Location : Gibraltar
+2018-08-28 13:47:20 INFO  NewsletterPage:130 - Afiliates list is opened
+2018-08-28 13:47:21 INFO  NewsletterPage:139 - Afiliates list is closed
+2018-08-28 13:47:21 INFO  NewsletterPage:156 - Email checkbox is clicked
+2018-08-28 13:47:21 INFO  NewsletterPage:165 - SMS checkbox is clicked
+2018-08-28 13:47:21 INFO  NewsletterPage:196 - SMS field is filled
+2018-08-28 13:47:22 INFO  NewsletterPage:183 - Address checkbox is clicked
+2018-08-28 13:47:22 INFO  NewsletterPage:174 - Phone checkbox is clicked
+2018-08-28 13:47:22 INFO  NewsletterPage:211 - Phone field is filled
+2018-08-28 13:47:22 INFO  NewsletterPage:227 - Address field is filled
+2018-08-28 13:47:22 INFO  NewsletterPage:120 - Button is clicked
+2018-08-28 14:19:07 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:19:10 INFO  Utils:93 - Test
+2018-08-28 14:19:11 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 14:19:11 INFO  Utils:98 - Location field is present
+2018-08-28 14:19:11 INFO  Utils:100 - DateBirth field is present
+2018-08-28 14:19:11 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:19:11 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:19:11 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 14:19:11 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 14:19:13 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 14:19:13 INFO  NewsletterPage:58 - Email : 
+2018-08-28 14:19:13 INFO  NewsletterPage:71 - User Name is filled
+2018-08-28 14:19:14 INFO  NewsletterPage:84 - User Name is filled
+2018-08-28 14:19:14 INFO  NewsletterPage:94 - Location dropdown is ready!
+2018-08-28 14:19:14 INFO  NewsletterPage:100 - Location : Gibraltar
+2018-08-28 14:19:14 INFO  NewsletterPage:132 - Afiliates list is opened
+2018-08-28 14:19:16 INFO  NewsletterPage:141 - Afiliates list is closed
+2018-08-28 14:19:16 INFO  NewsletterPage:158 - Email checkbox is clicked
+2018-08-28 14:19:16 INFO  NewsletterPage:167 - SMS checkbox is clicked
+2018-08-28 14:19:16 INFO  NewsletterPage:198 - SMS field is filled
+2018-08-28 14:19:16 INFO  NewsletterPage:185 - Address checkbox is clicked
+2018-08-28 14:19:16 INFO  NewsletterPage:176 - Phone checkbox is clicked
+2018-08-28 14:19:16 INFO  NewsletterPage:213 - Phone field is filled
+2018-08-28 14:19:17 INFO  NewsletterPage:229 - Address field is filled
+2018-08-28 14:19:17 INFO  NewsletterPage:122 - Button is clicked
+2018-08-28 14:24:28 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:24:30 INFO  Utils:71 - Test
+2018-08-28 14:24:30 INFO  Utils:74 - Location field is present
+2018-08-28 14:24:30 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:24:30 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:24:30 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:24:30 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:24:30 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:24:37 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:24:37 INFO  FirstTest:55 - Test is finished
+2018-08-28 14:24:54 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:24:55 INFO  Utils:71 - Test
+2018-08-28 14:24:56 INFO  Utils:74 - Location field is present
+2018-08-28 14:24:56 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:24:56 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:24:56 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:24:57 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:24:57 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:24:58 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:45:05 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:45:07 INFO  Utils:71 - Test
+2018-08-28 14:45:07 INFO  Utils:74 - Location field is present
+2018-08-28 14:45:07 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:45:07 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:45:07 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:45:07 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:45:08 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:45:09 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:45:09 INFO  FirstTest:55 - Test is finished
+2018-08-28 14:47:00 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:47:02 INFO  Utils:71 - Test
+2018-08-28 14:47:03 INFO  Utils:74 - Location field is present
+2018-08-28 14:47:03 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:47:03 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:47:03 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:47:03 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:47:03 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:47:05 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:50:52 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:50:54 INFO  Utils:71 - Test
+2018-08-28 14:50:54 INFO  Utils:74 - Location field is present
+2018-08-28 14:50:54 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:50:54 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:50:54 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:50:54 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:50:55 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:50:56 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:59:39 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:59:41 INFO  Utils:71 - Test
+2018-08-28 14:59:41 INFO  Utils:74 - Location field is present
+2018-08-28 14:59:41 INFO  Utils:76 - DateBirth field is present
+2018-08-28 14:59:42 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 14:59:42 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 14:59:42 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:59:42 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:59:44 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 14:59:44 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 14:59:44 INFO  Listener:62 - Test is Failed
+2018-08-28 14:59:44 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (27ab2f373b3dd633e6de0c1ab6105b04)
+2018-08-28 14:59:45 INFO  GetScreenshots:26 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ruinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_14_59_45.png' height ='400' width = '400'/><br>
+2018-08-28 14:59:48 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 14:59:50 INFO  Utils:93 - Test
+2018-08-28 14:59:50 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 14:59:50 INFO  Utils:98 - Location field is present
+2018-08-28 14:59:50 INFO  Utils:100 - DateBirth field is present
+2018-08-28 14:59:50 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 14:59:51 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 14:59:51 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 14:59:51 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 14:59:51 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 14:59:52 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 14:59:53 INFO  NewsletterPage:58 - Email : 
+2018-08-28 14:59:53 INFO  NewsletterPage:71 - User Name is filled
+2018-08-28 14:59:53 INFO  NewsletterPage:84 - User Name is filled
+2018-08-28 14:59:53 INFO  NewsletterPage:94 - Location dropdown is ready!
+2018-08-28 14:59:54 INFO  NewsletterPage:100 - Location : Gibraltar
+2018-08-28 14:59:54 INFO  NewsletterPage:132 - Afiliates list is opened
+2018-08-28 14:59:54 INFO  NewsletterPage:141 - Afiliates list is closed
+2018-08-28 14:59:55 INFO  NewsletterPage:158 - Email checkbox is clicked
+2018-08-28 14:59:55 INFO  NewsletterPage:167 - SMS checkbox is clicked
+2018-08-28 14:59:55 INFO  NewsletterPage:198 - SMS field is filled
+2018-08-28 14:59:55 INFO  NewsletterPage:185 - Address checkbox is clicked
+2018-08-28 14:59:55 INFO  NewsletterPage:176 - Phone checkbox is clicked
+2018-08-28 14:59:56 INFO  NewsletterPage:213 - Phone field is filled
+2018-08-28 14:59:56 INFO  NewsletterPage:229 - Address field is filled
+2018-08-28 14:59:56 INFO  NewsletterPage:122 - Button is clicked
+2018-08-28 15:00:26 INFO  Listener:62 - Test is Failed
+2018-08-28 15:00:26 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (2f2aca5be5a913448b019e0dd236fa92)
+2018-08-28 15:00:27 INFO  GetScreenshots:26 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ne manquez rien de notre actualité ! - Ruinart_NewsletterFeatureTest_2018_08_28_15_00_27.png' height ='400' width = '400'/><br>
+2018-08-28 15:00:31 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:00:33 INFO  Utils:71 - Test
+2018-08-28 15:00:33 INFO  Utils:74 - Location field is present
+2018-08-28 15:00:33 INFO  Utils:76 - DateBirth field is present
+2018-08-28 15:00:33 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 15:00:33 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 15:00:33 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:00:33 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:00:34 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 15:00:34 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:00:35 INFO  Listener:62 - Test is Failed
+2018-08-28 15:00:35 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (b64ced05ae778398b7c9d385cee55bf9)
+2018-08-28 15:00:35 INFO  GetScreenshots:26 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ruinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_15_00_35.png' height ='400' width = '400'/><br>
+2018-08-28 15:03:38 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:03:41 INFO  Utils:71 - Test
+2018-08-28 15:03:41 INFO  Utils:74 - Location field is present
+2018-08-28 15:03:41 INFO  Utils:76 - DateBirth field is present
+2018-08-28 15:03:41 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 15:03:41 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 15:03:42 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:03:42 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:03:43 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 15:03:43 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:03:43 INFO  Listener:62 - Test is Failed
+2018-08-28 15:03:43 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (48ae005e008b0726de1c0f240ed690f1)
+2018-08-28 15:03:44 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_testsRuinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_15_03_44.png' height ='400' width = '400'/><br>
+2018-08-28 15:03:48 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:03:50 INFO  Utils:93 - Test
+2018-08-28 15:03:50 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 15:03:50 INFO  Utils:98 - Location field is present
+2018-08-28 15:03:50 INFO  Utils:100 - DateBirth field is present
+2018-08-28 15:03:50 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:03:51 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:03:51 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 15:03:51 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:03:51 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 15:03:52 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 15:03:53 INFO  NewsletterPage:58 - Email : 
+2018-08-28 15:03:53 INFO  NewsletterPage:71 - User Name is filled
+2018-08-28 15:03:53 INFO  NewsletterPage:84 - User Name is filled
+2018-08-28 15:03:53 INFO  NewsletterPage:94 - Location dropdown is ready!
+2018-08-28 15:03:53 INFO  NewsletterPage:100 - Location : Gibraltar
+2018-08-28 15:03:54 INFO  NewsletterPage:132 - Afiliates list is opened
+2018-08-28 15:03:54 INFO  NewsletterPage:141 - Afiliates list is closed
+2018-08-28 15:03:54 INFO  NewsletterPage:158 - Email checkbox is clicked
+2018-08-28 15:03:54 INFO  NewsletterPage:167 - SMS checkbox is clicked
+2018-08-28 15:03:55 INFO  NewsletterPage:198 - SMS field is filled
+2018-08-28 15:03:55 INFO  NewsletterPage:185 - Address checkbox is clicked
+2018-08-28 15:03:55 INFO  NewsletterPage:176 - Phone checkbox is clicked
+2018-08-28 15:03:55 INFO  NewsletterPage:213 - Phone field is filled
+2018-08-28 15:03:55 INFO  NewsletterPage:229 - Address field is filled
+2018-08-28 15:03:56 INFO  NewsletterPage:122 - Button is clicked
+2018-08-28 15:04:26 INFO  Listener:62 - Test is Failed
+2018-08-28 15:04:26 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (5b0dbf0aab3899eec04a3d3872cc7f37)
+2018-08-28 15:04:26 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_testsNe manquez rien de notre actualité ! - Ruinart_NewsletterFeatureTest_2018_08_28_15_04_26.png' height ='400' width = '400'/><br>
+2018-08-28 15:04:30 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:04:32 INFO  Utils:71 - Test
+2018-08-28 15:04:32 INFO  Utils:74 - Location field is present
+2018-08-28 15:04:32 INFO  Utils:76 - DateBirth field is present
+2018-08-28 15:04:32 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 15:04:32 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 15:04:32 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:04:33 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:04:34 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 15:04:34 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:04:34 INFO  Listener:62 - Test is Failed
+2018-08-28 15:04:34 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (59f8e0eeaf1f44ce81fe2663803d9e40)
+2018-08-28 15:04:35 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_testsRuinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_15_04_35.png' height ='400' width = '400'/><br>
+2018-08-28 15:05:08 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:05:09 INFO  Utils:71 - Test
+2018-08-28 15:05:10 INFO  Utils:74 - Location field is present
+2018-08-28 15:05:10 INFO  Utils:76 - DateBirth field is present
+2018-08-28 15:05:10 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 15:05:10 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 15:05:10 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:05:10 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:05:12 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 15:05:12 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:05:12 INFO  Listener:62 - Test is Failed
+2018-08-28 15:05:12 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (bdae8c9b3fc771d00c40c75ab87ce698)
+2018-08-28 15:05:13 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ruinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_15_05_13.png' height ='400' width = '400'/><br>
+2018-08-28 15:05:17 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:05:18 INFO  Utils:93 - Test
+2018-08-28 15:05:18 INFO  Utils:159 - Cookies banner is accepted
+2018-08-28 15:05:18 INFO  Utils:98 - Location field is present
+2018-08-28 15:05:18 INFO  Utils:100 - DateBirth field is present
+2018-08-28 15:05:18 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:05:19 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:05:19 INFO  Utils:103 - User at : https://pp2.ruinart.com/fr-e
+2018-08-28 15:05:19 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:05:19 INFO  NewsletterBaseTest:50 - Header is present
+2018-08-28 15:05:21 INFO  HomePage:216 - Newsletter page is opened
+2018-08-28 15:05:21 INFO  NewsletterPage:58 - Email : 
+2018-08-28 15:05:21 INFO  NewsletterPage:71 - User Name is filled
+2018-08-28 15:05:22 INFO  NewsletterPage:84 - User Name is filled
+2018-08-28 15:05:22 INFO  NewsletterPage:94 - Location dropdown is ready!
+2018-08-28 15:05:22 INFO  NewsletterPage:100 - Location : Gibraltar
+2018-08-28 15:05:22 INFO  NewsletterPage:132 - Afiliates list is opened
+2018-08-28 15:05:23 INFO  NewsletterPage:141 - Afiliates list is closed
+2018-08-28 15:05:23 INFO  NewsletterPage:158 - Email checkbox is clicked
+2018-08-28 15:05:23 INFO  NewsletterPage:167 - SMS checkbox is clicked
+2018-08-28 15:05:23 INFO  NewsletterPage:198 - SMS field is filled
+2018-08-28 15:05:23 INFO  NewsletterPage:185 - Address checkbox is clicked
+2018-08-28 15:05:23 INFO  NewsletterPage:176 - Phone checkbox is clicked
+2018-08-28 15:05:24 INFO  NewsletterPage:213 - Phone field is filled
+2018-08-28 15:05:24 INFO  NewsletterPage:229 - Address field is filled
+2018-08-28 15:05:25 INFO  NewsletterPage:122 - Button is clicked
+2018-08-28 15:05:55 INFO  Listener:62 - Test is Failed
+2018-08-28 15:05:55 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (b74ae0035acec53ce12d0c674a8d03a1)
+2018-08-28 15:05:55 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ne manquez rien de notre actualité ! - Ruinart_NewsletterFeatureTest_2018_08_28_15_05_55.png' height ='400' width = '400'/><br>
+2018-08-28 15:05:59 INFO  Utils:132 - https://pp2.ruinart.com/fr-e
+2018-08-28 15:06:01 INFO  Utils:71 - Test
+2018-08-28 15:06:01 INFO  Utils:74 - Location field is present
+2018-08-28 15:06:01 INFO  Utils:76 - DateBirth field is present
+2018-08-28 15:06:01 INFO  AgeGatePage:96 - Location dropdown is ready
+2018-08-28 15:06:02 INFO  AgeGatePage:103 - Location : GERMANY
+2018-08-28 15:06:02 INFO  AgeGatePage:143 - Year dropdown is ready
+2018-08-28 15:06:02 INFO  AgeGatePage:150 - Year : 1971
+2018-08-28 15:06:03 INFO  Utils:81 - https://pp2.ruinart.com/fr-fr
+2018-08-28 15:06:03 INFO  Listener:75 - The execution of the main test starts now
+2018-08-28 15:06:03 INFO  Listener:62 - Test is Failed
+2018-08-28 15:06:03 INFO  GetScreenshots:18 - Test is gogogogogog = ChromeDriver: chrome on XP (69b3cc05b3f2939c0067e546545e93a0)
+2018-08-28 15:06:04 INFO  GetScreenshots:28 - <br><img scr ='C:\Users\adyax-021\IdeaProjects\ruinart_tests\src\test\screenshots\Ruinart, la plus ancienne Maison de Champagne, depuis 1729_FirstTestStart_2018_08_28_15_06_04.png' height ='400' width = '400'/><br>

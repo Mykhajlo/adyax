@@ -1,17 +1,11 @@
 package com.adyax.ruinart.automation;
 
 
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.*;
 
-import java.io.File;
+import org.apache.log4j.Logger;
+import org.testng.*;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.GregorianCalendar;
+
 
 
 public class Listener implements ITestListener  {
@@ -70,6 +64,7 @@ public class Listener implements ITestListener  {
             GetScreenshots.failed(arg0.getName());
         } catch (IOException e) {
             e.printStackTrace();
+            LOGGER.info("Test is Bla-Bla = " );
         }
         //printTestResults(arg0);
     }
